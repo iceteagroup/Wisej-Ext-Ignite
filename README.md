@@ -148,7 +148,7 @@ this.igRadialGauge1.WidgetEvents = new []{
 };
 ~~~
 
-The event **args** object sent by the widget is available as **e** and the code can refer to the ej widget simply using **this**. Note that in the event code **this** refers to the ig widget, while in function code **this** refers to the Wisej widget and **this.widget** refers to the wrapped ig widget.
+The event **args** object sent by the widget is available as **e** and the code can refer to the ig widget simply using **this**. Note that in the event code **this** refers to the ig widget, while in function code **this** refers to the Wisej widget and **this.widget** refers to the wrapped ig widget.
 
 ## Support
 
