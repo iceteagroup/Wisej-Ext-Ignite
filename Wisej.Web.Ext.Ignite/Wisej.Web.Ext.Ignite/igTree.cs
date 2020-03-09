@@ -1,0 +1,69 @@
+﻿///////////////////////////////////////////////////////////////////////////////
+//
+// (C) 2020 ICE TEA GROUP LLC - ALL RIGHTS RESERVED
+//
+// 
+//
+// ALL INFORMATION CONTAINED HEREIN IS, AND REMAINS
+// THE PROPERTY OF ICE TEA GROUP LLC AND ITS SUPPLIERS, IF ANY.
+// THE INTELLECTUAL PROPERTY AND TECHNICAL CONCEPTS CONTAINED
+// HEREIN ARE PROPRIETARY TO ICE TEA GROUP LLC AND ITS SUPPLIERS
+// AND MAY BE COVERED BY U.S. AND FOREIGN PATENTS, PATENT IN PROCESS, AND
+// ARE PROTECTED BY TRADE SECRET OR COPYRIGHT LAW.
+//
+// DISSEMINATION OF THIS INFORMATION OR REPRODUCTION OF THIS MATERIAL
+// IS STRICTLY FORBIDDEN UNLESS PRIOR WRITTEN PERMISSION IS OBTAINED
+// FROM ICE TEA GROUP LLC.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+
+namespace Wisej.Web.Ext.Ignite
+{
+	/// <summary>
+	/// The igTree control is a jQuery tree control that binds to UL HTML elements, JSON, XML, .NET collections, and remote data sources.
+	/// </summary>
+	public class igTree : igBase
+	{
+
+		#region Constructors
+
+		/// <summary>
+		/// Constructs a new instance of the <see cref="igTree"/> class.
+		/// </summary>
+		public igTree() : this(null)
+		{
+		}
+
+		/// <summary>
+		/// Constructs a new instance of the <see cref="igTree"/> class.
+		/// </summary>
+		/// <param name="options"></param>
+		public igTree(object options) : base("igTree", options)
+		{
+			this.WidgetWiredEvents = new[] {
+			"dataBinding",
+			"dataBound",
+			"drag",
+			"dragStart",
+			"dragStop",
+			"nodeCheckstateChanged",
+			"nodeCheckstateChanging",
+			"nodeClick",
+			"nodeCollapsed",
+			"nodeCollapsing",
+			"nodeDoubleClick",
+			"nodeDropped",
+			"nodeDropping",
+			"nodeExpanded",
+			"nodeExpanding",
+			"nodePopulated",
+			"nodePopulating",
+			"selectionChanged",
+			"selectionChanging"
+			};
+		}
+
+		#endregion
+	}
+}

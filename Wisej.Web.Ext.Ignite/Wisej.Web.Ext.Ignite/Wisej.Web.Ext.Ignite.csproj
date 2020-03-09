@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DEAE237-1B7F-43C4-A7E2-EABE54B23186}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.Web.Ext.Ignite</RootNamespace>
+    <AssemblyName>Wisej.Web.Ext.Ignite</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\source\itg\Development\2.1\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="igBulletGraph.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igCategoryChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igDataChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igDoughnutChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igFinancialChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igHierarchicalGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igHtmlEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igLinearGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igMap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igPieChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igPivotDataSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igPivotGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igPivotView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igQRCodeBarcode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igFunnelChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igRadialGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igRating.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igScheduler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igShapeChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igSparkline.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igSplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igSpreadsheet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igTreeGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igVideoPlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="igZoombar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="igFunnelChart.js">
+      <DependentUpon>igFunnelChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igRadialGauge.js">
+      <DependentUpon>igRadialGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Platform\wisej.web.ext.IgniteWidget.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IgniteUI\css\structure\fonts\jquery-ui.eot" />
+    <EmbeddedResource Include="IgniteUI\css\structure\fonts\jquery-ui.ttf" />
+    <EmbeddedResource Include="IgniteUI\css\structure\fonts\jquery-ui.woff" />
+    <None Include="itg.licenseheader" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="igPivotGrid.js">
+      <DependentUpon>igPivotGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igQRCodeBarcode.js">
+      <DependentUpon>igQRCodeBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igScheduler.js">
+      <DependentUpon>igScheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igSpreadsheet.js">
+      <DependentUpon>igSpreadsheet.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="igBulletGraph.js">
+      <DependentUpon>igBulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igCategoryChart.js">
+      <DependentUpon>igCategoryChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igCombo.js">
+      <DependentUpon>igCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igDataChart.js">
+      <DependentUpon>igDataChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igDoughnutChart.js">
+      <DependentUpon>igDoughnutChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igFinancialChart.js">
+      <DependentUpon>igFinancialChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igHierarchicalGrid.js">
+      <DependentUpon>igHierarchicalGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igLinearGauge.js">
+      <DependentUpon>igLinearGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igMap.js">
+      <DependentUpon>igMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igPieChart.js">
+      <DependentUpon>igPieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igPivotDataSelector.js">
+      <DependentUpon>igPivotDataSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igPivotView.js">
+      <DependentUpon>igPivotView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igShapeChart.js">
+      <DependentUpon>igShapeChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igSparkline.js">
+      <DependentUpon>igSparkline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igTree.js">
+      <DependentUpon>igTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igTreeGrid.js">
+      <DependentUpon>igTreeGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igZoombar.js">
+      <DependentUpon>igZoombar.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="igColorPicker.js">
+      <DependentUpon>igColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="igHtmlEditor.js">
+      <DependentUpon>igHtmlEditor.cs</DependentUpon>
+    </Content>
+    <EmbeddedResource Include="IgniteUI\css\structure\fonts\jquery-ui.svg" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igBrowserLogos.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\blank.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\diagonals-medium.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\filter-icons-333333.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\filter-icons-FFFFFF.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\group-by-label-right-edge.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\indicators-icon-on.svg" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\indicators-icon.svg" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\overlay-icon-on.svg" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\overlay-icon.svg" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\touch-icons.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igGrid\touch-icons.svg" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\arrow_collapse.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\arrow_expand.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\arrow_redo.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\arrow_undo.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\background_color.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\check.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\cut.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\decrease-font-size.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\html-editor-sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\html.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\html_add.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\html_delete.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\html_go.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\html_valid.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\image_add.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\increase-font-size.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\link.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\link_add.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\link_break.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\page_copy.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\page_paste.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\table-delete-column-icon.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\table-insert-column-icon.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\table.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\table_row_delete.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\table_row_insert.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_align_center.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_align_justify.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_align_left.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_align_right.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_bold.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_color.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_horizontalrule.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_indent.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_indent_remove.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_italic.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_list_bullets.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_list_numbers.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_strikethrough.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igHtmlEditor\text_underline.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igLoadingSmall.gif" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igPivot\dataselector-sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igPivot\kpi-icons.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igPivot\pivot-header-icons.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igPopover\igPopoverArrowBottom.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igPopover\igPopoverArrowLeft.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igPopover\igPopoverArrowRight.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igPopover\igPopoverArrows.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igPopover\igPopoverArrowTop.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igRating\ig-rating-touch.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igRating\ig-rating-touchx2.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igScroll\up.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igScroll\up_active.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igBigPauseButton.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igBigPlayButton.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igLoadingSmall.gif" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igPlayButton24.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igPlayButton32.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igPlayButton48.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\igVideoPlayer\igWarningIcon.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\trial.png" />
+    <EmbeddedResource Include="IgniteUI\css\structure\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="igTimePicker.js">
+      <DependentUpon>igTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="igSplitButton.js">
+      <DependentUpon>igSplitButton.cs</DependentUpon>
+    </Content>
+    <Content Include="igVideoPlayer.js">
+      <DependentUpon>igVideoPlayer.cs</DependentUpon>
+    </Content>
+    <EmbeddedResource Include="IgniteUI\css\structure\infragistics.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\igGrid\filter-icons-333333.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\igGrid\filter-icons-FFFFFF.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\igSpreadsheet\ig-Spreadsheet.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\igVideoPlayer\igVideoPlayerIcons.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\igGrid\filter-icons-333333.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\igGrid\filter-icons-FFFFFF.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\igSpreadsheet\ig-Spreadsheet.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\igVideoPlayer\igVideoPlayerIcons.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\flatly\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\igGrid\filter-icons-333333.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\igGrid\filter-icons-FFFFFF.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\igSpreadsheet\ig-Spreadsheet.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\igVideoPlayer\igVideoPlayerIcons.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\superhero\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\igGrid\filter-icons-333333.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\igGrid\filter-icons-FFFFFF.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\igSpreadsheet\spreadsheet-sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\igVideoPlayer\igVideoPlayerIcons.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\yeti\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\igGrid\filter-icons-333333.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\igGrid\filter-icons-FFFFFF.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\igSpreadsheet\ig-Spreadsheet.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\igVideoPlayer\igVideoPlayerIcons.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\bootstrap4\default\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\datepicker.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\gradient_1.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\gradient_2.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\gradient_3.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\gradient_4.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\gradient_5.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\gradient_6.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\gradient_7.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\igSpreadsheet\ig-Spreadsheet.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\igVideoPlayer\igVideoPlayerIcons.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\progress_bar.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\slider_handles.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\slider_h_bg.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\slider_v_bg.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\tab_bg.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\ui-icons_228ef1_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics2012\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\js\jquery-ui.min.js" />
+    <EmbeddedResource Include="IgniteUI\js\infragistics-dv.js" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\igSpreadsheet\ig-Spreadsheet.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\igVideoPlayer\igVideoPlayerIcons.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\ui-icons_228ef1_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\infragistics\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\igGrid\filter-icons-333333.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\igGrid\filter-icons-FFFFFF.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\igSpreadsheet\ig-Spreadsheet.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\igVideoPlayer\igVideoPlayerIcons.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\igVideoPlayer\igVPBackground.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\ui-icons_000000_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\ui-icons_007aff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\ui-icons_8e8e93_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\ui-icons_fd472b_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\ios\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\icons-styles.css" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\icon_sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igGrid\filter-icons-858585.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igHtmlEditor\html-editor-sprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igRating\ig-rating-touch.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igRating\ig-rating-touchx2.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igRating\ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igRating\SOURCE_ig-rating-touch.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igRating\SOURCE_ig-rating-touchx2.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igRating\SOURCE_ig-rating.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igSpreadsheet\ig-Spreadsheet.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igTooltip\igTooltipArrows.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igVideoPlayer\igVideoPlayerIcons_858585.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igVideoPlayer\igVideoPlayerIcons_ffffff.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\igVideoPlayer\igVPBookmarkSprite.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\ui-anim_basic_16x16.gif" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\ui-icons_00AADE_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\ui-icons_565656_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\ui-icons_858585_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="IgniteUI\css\themes\metro\infragistics.theme.css" />
+    <EmbeddedResource Include="IgniteUI\js\jquery.min.js" />
+    <EmbeddedResource Include="IgniteUI\js\i18n\infragistics-bg.js" />
+    <EmbeddedResource Include="IgniteUI\js\i18n\infragistics-de.js" />
+    <EmbeddedResource Include="IgniteUI\js\i18n\infragistics-en.js" />
+    <EmbeddedResource Include="IgniteUI\js\i18n\infragistics-es.js" />
+    <EmbeddedResource Include="IgniteUI\js\i18n\infragistics-fr.js" />
+    <EmbeddedResource Include="IgniteUI\js\i18n\infragistics-ja.js" />
+    <EmbeddedResource Include="IgniteUI\js\i18n\infragistics-ru.js" />
+    <EmbeddedResource Include="IgniteUI\js\infragistics.core.js" />
+    <EmbeddedResource Include="IgniteUI\js\infragistics.excel-bundled.js" />
+    <EmbeddedResource Include="IgniteUI\js\infragistics.loader.js" />
+    <EmbeddedResource Include="IgniteUI\js\infragistics.lob.js" />
+    <EmbeddedResource Include="IgniteUI\js\infragistics.scheduler-bundled.js" />
+    <EmbeddedResource Include="IgniteUI\js\infragistics.spreadsheet-bundled.js" />
+    <Content Include="igRating.js">
+      <DependentUpon>igRating.cs</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
