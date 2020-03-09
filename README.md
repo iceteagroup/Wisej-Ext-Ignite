@@ -93,7 +93,6 @@ However, some methods may return values that are not immediately usable in .NET,
 
 ~~~
 this.igScheduler1.WidgetFunctions = new []{
-
   new WidgetFunction()  {
     Name = "setDayViewSettings",
     Source = @"
