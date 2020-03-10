@@ -19,3 +19,20 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+	switch (args.type) {
+
+		case "cellClick":
+		case "cellRightClick":
+			return {
+				rowIndex: args.rowIndex,
+				rowKey: args.rowKey,
+				colIndex: args.colIndex,
+				colKey: args.colKey,
+			};
+			break;
+
+	}
+}

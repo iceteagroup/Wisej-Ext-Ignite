@@ -39,6 +39,18 @@
 			// 
 			this.panel.Controls.Add(this.igMap1);
 			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/map/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igmap";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/igmap-landing-page";
+			// 
 			// igMap1
 			// 
 			this.igMap1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 

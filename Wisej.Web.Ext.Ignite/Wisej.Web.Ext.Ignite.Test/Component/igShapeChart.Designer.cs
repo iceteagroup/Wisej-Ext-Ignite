@@ -51,6 +51,18 @@
 			// 
 			this.panel.Controls.Add(this.igShapeChart1);
 			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/shape-chart/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igSparkline";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/igsparkline-landing";
+			// 
 			// igShapeChart1
 			// 
 			this.igShapeChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 

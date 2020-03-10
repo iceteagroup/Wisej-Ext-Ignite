@@ -24,7 +24,10 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			
+			this.igCombo1.Options.mode = this.comboBox1.SelectedItem;
+			this.igCombo1.SetActiveIndex((int)this.numericUpDown1.Value);
+
+			this.igCombo1.Update();
 		}
 	}
 }

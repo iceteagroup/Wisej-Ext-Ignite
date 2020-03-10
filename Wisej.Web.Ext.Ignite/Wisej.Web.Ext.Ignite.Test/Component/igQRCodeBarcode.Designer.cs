@@ -61,7 +61,7 @@
 			// 
 			// linkDocs
 			// 
-			this.linkDocs.Text = "https://www.igniteui.com/barcode/overview";
+			this.linkDocs.Text = "https://www.igniteui.com/help/igqrcodebarcode-overview";
 			// 
 			// textBox1
 			// 
@@ -90,11 +90,11 @@
 			// igQRCodeBarcode1
 			// 
 			this.igQRCodeBarcode1.Anchor = Wisej.Web.AnchorStyles.None;
+			this.igQRCodeBarcode1.Data = "http://www.infragistics.com/products/jquery/";
 			this.igQRCodeBarcode1.Location = new System.Drawing.Point(115, 46);
 			this.igQRCodeBarcode1.Name = "igQRCodeBarcode1";
 			this.igQRCodeBarcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"data\":\"http://www.infragistics.com/products/jquery/\"}")));
 			this.igQRCodeBarcode1.Size = new System.Drawing.Size(223, 221);
-			this.igQRCodeBarcode1.Text = "igQRCodeBarcode1";
 			// 
 			// igQRCodeBarcode
 			// 

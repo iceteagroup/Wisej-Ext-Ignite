@@ -19,3 +19,38 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+    switch (args.type) {
+
+        case "sliceClick":
+            return args.slice;
+            break;
+
+        case "selectedItemChanged":
+        case "selectedItemChanging":
+            return {
+                oldItem: args.oldItem,
+                newItem: args.newItem
+            };
+            break;
+
+        case "selectedItemsChanged":
+        case "selectedItemsChanging":
+            return {
+                oldItems: args.oldItems,
+                newItems: args.newItems
+            };
+            break;
+
+        case "labelClick":
+            return args.item;
+            break;
+
+        default:
+            return args;
+            break;
+
+    }
+};

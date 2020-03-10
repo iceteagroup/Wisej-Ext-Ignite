@@ -30,9 +30,26 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igDataChartFinancial));
 			this.igDataChart1 = new Wisej.Web.Ext.Ignite.igDataChart();
+			this.buttonLoad = new Wisej.Web.Upload();
+			this.buttonExportImage = new Wisej.Web.Button();
+			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.comboBox1);
+			this.groupBox1.Controls.Add(this.buttonLoad);
+			this.groupBox1.Controls.Add(this.buttonExportImage);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonExportImage, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
@@ -48,7 +65,7 @@
 			// 
 			// linkDocs
 			// 
-			this.linkDocs.Text = "https://www.igniteui.com/data-chart/charts-financial-indicators";
+			this.linkDocs.Text = "http://www.igniteui.com/help/igdatachart-landing-page";
 			// 
 			// igDataChart1
 			// 
@@ -61,10 +78,45 @@
 			this.igDataChart1.Size = new System.Drawing.Size(400, 259);
 			this.igDataChart1.Text = "igDataChart1";
 			// 
-			// igDataChart2
+			// buttonLoad
 			// 
-			this.Name = "igDataChart2";
+			this.buttonLoad.AllowedFileTypes = ".json";
+			this.buttonLoad.HideValue = true;
+			this.buttonLoad.ImageSource = "icon-file";
+			this.buttonLoad.Location = new System.Drawing.Point(28, 172);
+			this.buttonLoad.Name = "buttonLoad";
+			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
+			this.buttonLoad.TabIndex = 17;
+			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
+			// 
+			// buttonExportImage
+			// 
+			this.buttonExportImage.Display = Wisej.Web.Display.Icon;
+			this.buttonExportImage.ImageSource = "icon-save";
+			this.buttonExportImage.Location = new System.Drawing.Point(76, 172);
+			this.buttonExportImage.Name = "buttonExportImage";
+			this.buttonExportImage.Size = new System.Drawing.Size(42, 42);
+			this.buttonExportImage.TabIndex = 16;
+			this.buttonExportImage.Click += new System.EventHandler(this.buttonExportImage_Click);
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.Items.AddRange(new object[] {
+            "none",
+            "dragZoom",
+            "dragPan"});
+			this.comboBox1.Label.Text = "Default Interaction";
+			this.comboBox1.Location = new System.Drawing.Point(28, 38);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(195, 42);
+			this.comboBox1.TabIndex = 18;
+			this.comboBox1.Text = "dragZoom";
+			// 
+			// igDataChartFinancial
+			// 
+			this.Name = "igDataChartFinancial";
 			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -74,5 +126,8 @@
 		#endregion
 
 		private Ignite.igDataChart igDataChart1;
+		private Upload buttonLoad;
+		private Button buttonExportImage;
+		private ComboBox comboBox1;
 	}
 }

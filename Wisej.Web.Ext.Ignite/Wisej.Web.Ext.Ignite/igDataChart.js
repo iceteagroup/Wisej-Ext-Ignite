@@ -19,6 +19,18 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+/**
+ * Process the options map before it is used to
+ * create or update the widget.
+ */
+this.filterOptions = function (options) {
+
+	if (wisej.web.DesignMode) {
+		options.highlightingTransitionDuration = 0;
+		options.animateSeriesWhenAxisRangeChanges = false;
+	}
+};
+
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 

@@ -19,6 +19,17 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+    // One item
+    if (args.slice.item.__inner != null)
+        return args.slice.item.__inner;
+    else
+        return args.slice; 
+
+};
+
 /**
  * Process the options map before it is used to
  * create or update the widget.

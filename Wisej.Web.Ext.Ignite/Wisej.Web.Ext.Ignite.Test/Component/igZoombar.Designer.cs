@@ -41,6 +41,18 @@
 			this.panel.Controls.Add(this.igDataChart1);
 			this.panel.Controls.Add(this.igZoombar1);
 			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/zoombar/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igzoombar";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "https://www.igniteui.com/help/igzoombar-landingpage";
+			// 
 			// igDataChart1
 			// 
 			this.igDataChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
@@ -52,6 +64,7 @@
 			this.igDataChart1.Size = new System.Drawing.Size(383, 191);
 			this.igDataChart1.TabIndex = 1;
 			this.igDataChart1.Text = "igDataChart1";
+			this.igDataChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
 			this.igDataChart1.Appear += new System.EventHandler(this.igDataChart1_Appear);
 			// 
 			// igZoombar1
@@ -60,7 +73,6 @@
             | Wisej.Web.AnchorStyles.Right)));
 			this.igZoombar1.Location = new System.Drawing.Point(35, 223);
 			this.igZoombar1.Name = "igZoombar1";
-			this.igZoombar1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{}")));
 			this.igZoombar1.Size = new System.Drawing.Size(383, 64);
 			this.igZoombar1.TabIndex = 2;
 			widgetFunction1.Name = "setTarget";

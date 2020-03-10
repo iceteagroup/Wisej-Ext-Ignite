@@ -39,6 +39,18 @@
 			// 
 			this.panel.Controls.Add(this.igPivotView1);
 			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/pivot-view/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igPivotView";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/igpivotview";
+			// 
 			// igPivotView1
 			// 
 			this.igPivotView1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 

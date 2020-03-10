@@ -284,7 +284,7 @@ namespace Wisej.Web.Ext.Ignite
 						Name = "infragistics.spreadsheet-bundled.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/infragistics.spreadsheet-bundled.js")
 					});
-					
+
 
 					// add locales.
 					if (this.Locales != null)

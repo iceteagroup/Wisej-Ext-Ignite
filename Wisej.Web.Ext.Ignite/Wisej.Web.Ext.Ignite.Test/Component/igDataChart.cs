@@ -19,6 +19,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 			if (this.textBox1.Text.Length > 0) { this.igDataChart1.Options.title = textBox1.Text; }
 			if (this.textBox2.Text.Length > 0) { this.igDataChart1.Options.subtitle = textBox2.Text; }
 			this.igDataChart1.Options.titleTextColor = comboBox1.SelectedItem;
+			this.igDataChart1.Options.series[0].valueMemberPath = this.comboBox2.SelectedItem;
 
 			this.igDataChart1.Update();
 		}
@@ -42,6 +43,21 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		private void buttonExportImage_Click(object sender, EventArgs e)
 		{
 			this.igDataChart1.Call("exportImageData");
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+			var rand = new Random();
+
+			this.igDataChart1.AddItem(new
+			{
+				CountryName = "MyCountry",
+				Pop1995 = rand.Next(300, 1000),
+				Pop2005 = rand.Next(300, 1000),
+				Pop2015 = rand.Next(300, 1000),
+				Pop2025 = rand.Next(300, 1000)
+			});
 		}
 	}
 }

@@ -64,5 +64,59 @@ namespace Wisej.Web.Ext.Ignite
 
 		#endregion
 
+		#region Widget Functions
+
+		/// <summary>
+		/// Inserts a new item at the specified index
+		/// </summary>
+		/// <param name="item">The item to insert</param>
+		/// <param name="index">The index to insert the item at in the series</param>
+		public void InsertItem(object item, int index)
+		{
+			var dataSourceCount = this.Options.dataSource.Length;
+
+			// Expand the array by one item
+			var newDataSource = new object[dataSourceCount + 1];
+
+			// Insert the elements into the new array
+			var inserted = 0;
+			for (int i = 0; i < dataSourceCount; i++)
+			{
+				if (index == i)
+				{
+					newDataSource[i] = item;
+					inserted++;
+				}
+				newDataSource[i + inserted] = this.Options.dataSource[i];
+			}
+
+			// Update the dataSource
+			this.Options.dataSource = newDataSource;
+
+			this.Update();
+		}
+
+		/// <summary>
+		/// Adds a new item to the end of data source
+		/// </summary>
+		/// <param name="item">The item to insert</param>
+		public void AddItem(object item)
+		{
+			var dataSourceCount = this.Options.dataSource.Length;
+
+			var newDataSource = new object[dataSourceCount + 1];
+
+			// Creates a new array with the old array
+			this.Options.dataSource.CopyTo(newDataSource, 0);
+			// Appends the new element
+			newDataSource[dataSourceCount] = item;
+
+			this.Options.dataSource = newDataSource;
+
+			this.Update();
+		}
+
+		#endregion
+
 	}
 }

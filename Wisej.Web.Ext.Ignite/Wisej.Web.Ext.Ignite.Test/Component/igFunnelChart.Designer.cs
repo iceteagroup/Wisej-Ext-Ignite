@@ -57,7 +57,7 @@
 			// 
 			// linkDocs
 			// 
-			this.linkDocs.Text = "https://www.igniteui.com/funnel-chart/overview";
+			this.linkDocs.Text = "http://www.igniteui.com/help/igfunnelchart-overview";
 			// 
 			// label4
 			// 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Test.Component
@@ -25,6 +26,62 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igFinancialChart1.Options.chartType = this.comboBox1.SelectedItem;
+			this.igFinancialChart1.Options.trendLineType = this.comboBox2.SelectedItem;
+
+			this.igFinancialChart1.Update();
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.igFinancialChart1.Widget.addItem(GenerateItem());
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			if (MessageBox.Show("Start a new task?", icon: MessageBoxIcon.Question, buttons: MessageBoxButtons.YesNo) == DialogResult.No)
+			{
+				return;
+			}
+
+			taskCount++;
+			this.button2.Text = $"Start Task ({taskCount})";
+
+			Application.StartTask(() => {
+
+				var rand = new Random();
+
+				for (var i = 0; i < 10; i++)
+				{
+					this.igFinancialChart1.Widget.addItem(GenerateItem());
+					Application.Update(this);
+					Thread.Sleep(500);
+				}
+
+				taskCount--;
+				this.button2.Text = $"Start Task ({taskCount})";
+				Application.Update(this);
+			});
+		}
+		private int taskCount;
+
+		private object GenerateItem()
+		{
+			Random r = new Random();
+
+			return new
+			{
+				time = "2013-02-04T05:00:00.000Z",
+				open = r.Next(1400, 1600),
+				high = r.Next(1400, 1600),
+				low = r.Next(1400, 1600),
+				close = r.Next(1400, 1600),
+				volume = 3723793
+			};
 		}
 	}
 }

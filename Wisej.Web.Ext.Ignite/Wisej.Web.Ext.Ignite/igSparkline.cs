@@ -51,5 +51,20 @@ namespace Wisej.Web.Ext.Ignite
 		}
 
 		#endregion
+
+		#region Widget Functions
+
+		/// <summary>
+		/// Inserts a new item to the data source and notifies the chart.
+		/// </summary>
+		/// <param name="item">The JSON object to insert</param>
+		/// <param name="index">The index to insert at</param>
+		public void InsertItem(object item, int index)
+		{
+			this.Widget.insertItem(item, index);
+		}
+
+		#endregion
+
 	}
 }

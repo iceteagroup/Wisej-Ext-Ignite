@@ -22,5 +22,26 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.igHierarchicalGrid1.AddItem(new
+			{
+				OrderID = 102554,
+				CustomerID = "FISH",
+				EmployeeID = 1,
+				OrderDate = "1996-07-18T00:00:00",
+				RequiredDate = "1996-08-15T00:00:00",
+				ShippedDate = "1996-07-24T00:00:00",
+				ShipVia = 1,
+				Freight = "456.5100",
+				ShipName = "Fish Erman",
+				ShipAddress = "123 Cherry St",
+				ShipCity = "Chicago",
+				ShipRegion = "",
+				ShipPostalCode = "44444",
+				ShipCountry = "United States"
+			});
+		}
 	}
 }

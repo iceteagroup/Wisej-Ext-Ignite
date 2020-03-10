@@ -37,6 +37,18 @@
 			// 
 			this.panel.Controls.Add(this.igTimePicker1);
 			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/editors/time-picker";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igtimepicker";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/igeditors-landingpage";
+			// 
 			// igTimePicker1
 			// 
 			this.igTimePicker1.Anchor = Wisej.Web.AnchorStyles.None;

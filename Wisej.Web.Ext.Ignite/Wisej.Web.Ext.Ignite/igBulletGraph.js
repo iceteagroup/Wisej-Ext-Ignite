@@ -27,4 +27,7 @@ this.filterOptions = function (options) {
 
     if (options.formatLabel)
         options.formatLabel = this.initFunction(options.formatLabel);
+
+    if (wisej.web.DesignMode)
+        options.transitionDuration = 0;
 };

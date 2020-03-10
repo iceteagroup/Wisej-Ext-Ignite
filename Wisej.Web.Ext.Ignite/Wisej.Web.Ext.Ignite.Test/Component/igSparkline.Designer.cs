@@ -29,13 +29,35 @@
 		private void InitializeComponent()
 		{
 			this.igSparkline1 = new Wisej.Web.Ext.Ignite.igSparkline();
+			this.buttonLoad = new Wisej.Web.Upload();
+			this.buttonSave = new Wisej.Web.Button();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.buttonLoad);
+			this.groupBox1.Controls.Add(this.buttonSave);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
+			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igSparkline1);
+			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/sparkline/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "https://www.igniteui.com/help/api/2019.2/ui.igsparkline";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/igsparkline-landing";
 			// 
 			// igSparkline1
 			// 
@@ -49,6 +71,27 @@
         "}")));
 			this.igSparkline1.Size = new System.Drawing.Size(410, 72);
 			this.igSparkline1.Text = "igSparkline1";
+			// 
+			// buttonLoad
+			// 
+			this.buttonLoad.AllowedFileTypes = ".json";
+			this.buttonLoad.HideValue = true;
+			this.buttonLoad.ImageSource = "icon-file";
+			this.buttonLoad.Location = new System.Drawing.Point(28, 186);
+			this.buttonLoad.Name = "buttonLoad";
+			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
+			this.buttonLoad.TabIndex = 15;
+			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
+			// 
+			// buttonSave
+			// 
+			this.buttonSave.Display = Wisej.Web.Display.Icon;
+			this.buttonSave.ImageSource = "icon-save";
+			this.buttonSave.Location = new System.Drawing.Point(76, 186);
+			this.buttonSave.Name = "buttonSave";
+			this.buttonSave.Size = new System.Drawing.Size(42, 42);
+			this.buttonSave.TabIndex = 14;
+			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// igSparkline
 			// 
@@ -64,5 +107,7 @@
 		#endregion
 
 		private Ignite.igSparkline igSparkline1;
+		private Upload buttonLoad;
+		private Button buttonSave;
 	}
 }

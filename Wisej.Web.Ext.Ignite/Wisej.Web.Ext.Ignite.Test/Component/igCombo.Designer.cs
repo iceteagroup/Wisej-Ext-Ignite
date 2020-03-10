@@ -31,6 +31,8 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igCombo));
 			this.igCombo1 = new Wisej.Web.Ext.Ignite.igCombo();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
+			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.comboBox2 = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -38,9 +40,13 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.comboBox2);
+			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.numericUpDown1);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -49,6 +55,18 @@
 			// panel
 			// 
 			this.panel.Controls.Add(this.igCombo1);
+			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/combo/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igCombo";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/igcombo-igcombo";
 			// 
 			// igCombo1
 			// 
@@ -62,7 +80,7 @@
 			// numericUpDown1
 			// 
 			this.numericUpDown1.Label.Text = "Set Selected Index";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 63);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 33);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
             30,
             0,
@@ -71,6 +89,33 @@
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 42);
 			this.numericUpDown1.TabIndex = 1;
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.Items.AddRange(new object[] {
+            "editable",
+            "dropdown",
+            "readonlylist",
+            "readonly"});
+			this.comboBox1.Label.Text = "Mode";
+			this.comboBox1.Location = new System.Drawing.Point(28, 103);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(195, 42);
+			this.comboBox1.TabIndex = 2;
+			this.comboBox1.Text = "editable";
+			// 
+			// comboBox2
+			// 
+			this.comboBox2.Items.AddRange(new object[] {
+            "auto",
+            "bottom",
+            "top"});
+			this.comboBox2.Label.Text = "Drop Down Orientation";
+			this.comboBox2.Location = new System.Drawing.Point(28, 173);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(195, 42);
+			this.comboBox2.TabIndex = 3;
+			this.comboBox2.Text = "auto";
 			// 
 			// igCombo
 			// 
@@ -88,5 +133,7 @@
 
 		private Ignite.igCombo igCombo1;
 		private NumericUpDown numericUpDown1;
+		private ComboBox comboBox1;
+		private ComboBox comboBox2;
 	}
 }

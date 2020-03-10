@@ -21,5 +21,17 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
+		{
+			this.igDataChart1.Options.dataSource = JSON.Parse(e.Files[0].InputStream);
+
+			this.igDataChart1.Update();
+		}
+
+		private void buttonExportImage_Click(object sender, EventArgs e)
+		{
+			this.igDataChart1.Call("exportImageData");
+		}
 	}
 }

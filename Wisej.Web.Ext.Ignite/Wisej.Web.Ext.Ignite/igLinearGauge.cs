@@ -64,7 +64,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// Specifies the value of the widget
 		/// </summary>
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-		public int Value
+		public double Value
 		{
 			get
 			{

@@ -50,6 +50,18 @@
 			// 
 			this.panel.Controls.Add(this.igSpreadsheet1);
 			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/spreadsheet/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "https://www.igniteui.com/help/api/2019.2/ui.igSpreadsheet";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/igspreadsheet-overview";
+			// 
 			// igSpreadsheet1
 			// 
 			this.igSpreadsheet1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 

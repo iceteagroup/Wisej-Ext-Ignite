@@ -29,14 +29,42 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igHierarchicalGrid));
+			this.button1 = new Wisej.Web.Button();
 			this.igHierarchicalGrid1 = new Wisej.Web.Ext.Ignite.igHierarchicalGrid();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.button1);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.button1, 0);
+			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igHierarchicalGrid1);
+			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/hierarchical-grid/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igHierarchicalGrid";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/ighierarchicalgrid-ighierarchicalgrid";
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(28, 80);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(195, 27);
+			this.button1.TabIndex = 1;
+			this.button1.Text = "Add new Item";
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// igHierarchicalGrid1
 			// 
@@ -62,5 +90,6 @@
 		#endregion
 
 		private Ignite.igHierarchicalGrid igHierarchicalGrid1;
+		private Button button1;
 	}
 }

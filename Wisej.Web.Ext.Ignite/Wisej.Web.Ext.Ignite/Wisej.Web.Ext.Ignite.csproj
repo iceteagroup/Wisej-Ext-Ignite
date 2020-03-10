@@ -478,9 +478,9 @@
     <EmbeddedResource Include="IgniteUI\js\infragistics.lob.js" />
     <EmbeddedResource Include="IgniteUI\js\infragistics.scheduler-bundled.js" />
     <EmbeddedResource Include="IgniteUI\js\infragistics.spreadsheet-bundled.js" />
-    <Content Include="igRating.js">
+    <EmbeddedResource Include="igRating.js">
       <DependentUpon>igRating.cs</DependentUpon>
-    </Content>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

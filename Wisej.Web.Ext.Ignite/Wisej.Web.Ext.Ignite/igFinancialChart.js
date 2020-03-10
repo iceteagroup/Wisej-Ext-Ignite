@@ -19,9 +19,14 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-this.loadData = function (path) {
+/**
+ * Process the options map before it is used to
+ * create or update the widget.
+ */
+this.filterOptions = function (options) {
 
-	debugger;
-	if (this.widget)
-		this.widget.dataSourceUrl = path;
-}
+    if (wisej.web.DesignMode) {
+        options.transitionDuration = 0;
+        options.animateSeriesWhenAxisRangeChanges = false;
+    }
+};

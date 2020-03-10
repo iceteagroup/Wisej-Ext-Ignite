@@ -82,7 +82,6 @@
 			this.igCategoryChart1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.igCategoryChart1.ChartType = Wisej.Web.Ext.Ignite.igCategoryChart.ChartTypes.auto;
 			this.igCategoryChart1.Location = new System.Drawing.Point(21, 23);
 			this.igCategoryChart1.Name = "igCategoryChart1";
 			this.igCategoryChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igCategoryChart1.Options"))));

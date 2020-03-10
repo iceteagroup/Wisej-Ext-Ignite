@@ -80,5 +80,25 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void igRadialGauge_Load(object sender, EventArgs e)
+		{
+			this.igRadialGauge1.Options.ranges = new Object[] {
+				new { name = "range1", 
+					brush = "rgba(154, 189, 41, 1)",
+					startValue = 70,
+					endValue = 100,
+					outerStartExtent = 0.55,
+					outerEndExtent = 0.65
+				},
+				new { name = "range2",
+					brush = "rgba(100, 145, 41, 1)",
+					startValue = 40,
+					endValue = 50,
+					outerStartExtent = 0.55,
+					outerEndExtent = 0.65
+				},
+			};
+		}
 	}
 }

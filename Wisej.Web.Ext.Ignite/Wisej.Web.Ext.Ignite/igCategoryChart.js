@@ -27,6 +27,12 @@ this.filterOptions = function (options) {
 
     if (options.yAxisFormatLabel)
         options.yAxisFormatLabel = this.initFunction(options.yAxisFormatLabel);
+
+    if (wisej.web.DesignMode) {
+        options.transitionDuration = 0;
+        options.transitionInDuration = 0;
+        options.animateSeriesWhenAxisRangeChanges = false;
+    }
 };
 
 /**

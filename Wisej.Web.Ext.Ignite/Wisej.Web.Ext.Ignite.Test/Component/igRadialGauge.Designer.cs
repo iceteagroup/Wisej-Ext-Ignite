@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igRadialGauge));
 			this.igRadialGauge1 = new Wisej.Web.Ext.Ignite.igRadialGauge();
 			this.button2 = new Wisej.Web.Button();
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
@@ -72,7 +71,7 @@
 			// 
 			// linkDocs
 			// 
-			this.linkDocs.Text = "https://www.igniteui.com/radial-gauge/overview";
+			this.linkDocs.Text = "https://www.igniteui.com/help/igradialgauge-igradialgauge-overview";
 			// 
 			// igRadialGauge1
 			// 
@@ -81,7 +80,7 @@
             | Wisej.Web.AnchorStyles.Right)));
 			this.igRadialGauge1.Location = new System.Drawing.Point(50, 29);
 			this.igRadialGauge1.Name = "igRadialGauge1";
-			this.igRadialGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igRadialGauge1.Options"))));
+			this.igRadialGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"transitionDuration\":250,\"isNeedleDraggingEnabled\":true}")));
 			this.igRadialGauge1.Size = new System.Drawing.Size(338, 307);
 			this.igRadialGauge1.Text = "igRadialGauge1";
 			this.igRadialGauge1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[0];
@@ -130,6 +129,7 @@
 			// 
 			this.Name = "igRadialGauge";
 			this.Size = new System.Drawing.Size(1047, 557);
+			this.Load += new System.EventHandler(this.igRadialGauge_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

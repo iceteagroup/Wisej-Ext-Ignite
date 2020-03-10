@@ -48,6 +48,18 @@
 			// 
 			this.panel.Controls.Add(this.igVideoPlayer1);
 			// 
+			// linkDemo
+			// 
+			this.linkDemo.Text = "https://www.igniteui.com/video-player/overview";
+			// 
+			// linkAPI
+			// 
+			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igvideoplayer";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.Text = "http://www.igniteui.com/help/igvideoplayer-overview";
+			// 
 			// igVideoPlayer1
 			// 
 			this.igVideoPlayer1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 

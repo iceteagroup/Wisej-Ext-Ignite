@@ -66,5 +66,67 @@ namespace Wisej.Web.Ext.Ignite
 		}
 
 		#endregion
+
+		#region Widget Functions
+
+		#region Widget Functions
+
+		/// <summary>
+		/// Inserts a new item at the specified index
+		/// </summary>
+		/// <param name="item">The item to insert</param>
+		/// <param name="dataSourceIndex">The index to insert the item at in the series</param>
+		/// <param name="seriesIndex">The series to insert the item into</param>
+		public void InsertItem(object item, int dataSourceIndex, int seriesIndex)
+		{
+			if (dataSourceIndex < 0 || seriesIndex < 0) { return; }
+
+			var dataSourceCount = this.Options.series[seriesIndex].dataSource.Length;
+
+			// Expand the array by one item
+			var newDataSource = new object[dataSourceCount + 1];
+
+			// Insert the elements into the new array
+			var inserted = 0;
+			for (int i = 0; i < dataSourceCount; i++)
+			{
+				if (dataSourceIndex == i)
+				{
+					newDataSource[i] = item;
+					inserted++;
+				}
+				newDataSource[i + inserted] = this.Options.series[seriesIndex].dataSource[i];
+			}
+
+			// Update the dataSource
+			this.Options.series[seriesIndex].dataSource = newDataSource;
+
+			this.Update();
+		}
+
+		/// <summary>
+		/// Adds a new item to the data source
+		/// </summary>
+		/// <param name="item">The item to insert</param>
+		/// <param name="seriesIndex">The series to insert the item into</param>
+		public void AddItem(object item)
+		{
+			var dataSourceCount = this.Options.dataSource.Length;
+
+			var newDataSource = new object[dataSourceCount + 1];
+
+			// Creates a new array with the old array
+			this.Options.dataSource.CopyTo(newDataSource, 0);
+			// Appends the new element
+			newDataSource[dataSourceCount] = item;
+
+			this.Options.dataSource = newDataSource;
+
+			this.Update();
+		}
+
+		#endregion
+
+		#endregion
 	}
 }

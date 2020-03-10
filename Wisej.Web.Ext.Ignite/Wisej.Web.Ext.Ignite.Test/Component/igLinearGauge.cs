@@ -20,5 +20,13 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igLinearGauge1.Value = (double) this.numericUpDown1.Value;
+			this.igLinearGauge1.Options.needleShape = this.comboBox1.SelectedItem;
+
+			this.igLinearGauge1.Update();
+		}
 	}
 }
