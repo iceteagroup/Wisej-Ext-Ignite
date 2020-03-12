@@ -20,5 +20,14 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igFunnelChart1.Options.useBezierCurve = this.checkBox2.Checked;
+			this.igFunnelChart1.Options.allowSliceSelection = this.checkBox1.Checked;
+			this.igFunnelChart1.Options.funnelSliceDisplay = this.comboBox1.SelectedItem;
+
+			this.igFunnelChart1.Update();
+		}
 	}
 }

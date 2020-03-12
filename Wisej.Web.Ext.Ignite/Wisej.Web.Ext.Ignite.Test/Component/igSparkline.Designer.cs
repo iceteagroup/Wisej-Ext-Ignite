@@ -70,6 +70,7 @@
 			this.igSparkline1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"valueMemberPath\":\"ExtendedPrice\",\"tooltipTemplate\":\"Low:${Low}<br>High:${High}\"" +
         "}")));
 			this.igSparkline1.Size = new System.Drawing.Size(410, 72);
+			this.igSparkline1.TabIndex = 0;
 			this.igSparkline1.Text = "igSparkline1";
 			// 
 			// buttonLoad

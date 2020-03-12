@@ -85,6 +85,7 @@
 			this.igDoughnutChart1.Name = "igDoughnutChart1";
 			this.igDoughnutChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDoughnutChart1.Options"))));
 			this.igDoughnutChart1.Size = new System.Drawing.Size(407, 328);
+			this.igDoughnutChart1.TabIndex = 0;
 			this.igDoughnutChart1.Text = "igDoughnutChart1";
 			widgetFunction1.Name = "formatLabel";
 			widgetFunction1.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.Pop" +

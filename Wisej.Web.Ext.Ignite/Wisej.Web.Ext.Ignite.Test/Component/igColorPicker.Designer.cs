@@ -30,16 +30,9 @@
 		{
 			this.label4 = new Wisej.Web.Label();
 			this.igColorPicker1 = new Wisej.Web.Ext.Ignite.igColorPicker();
-			this.textBox1 = new Wisej.Web.TextBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.textBox1);
-			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
-			this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
 			// 
 			// buttonUpdate
 			// 
@@ -74,20 +67,10 @@
 			this.igColorPicker1.TabIndex = 2;
 			this.igColorPicker1.Text = "igColorPicker1";
 			// 
-			// textBox1
-			// 
-			this.textBox1.InputType.Type = Wisej.Web.TextBoxType.Color;
-			this.textBox1.Label.Text = "Selects a Matching Color on the Widget";
-			this.textBox1.Location = new System.Drawing.Point(8, 53);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(234, 42);
-			this.textBox1.TabIndex = 1;
-			// 
 			// igColorPicker
 			// 
 			this.Name = "igColorPicker";
 			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -98,6 +81,5 @@
 
 		private Ignite.igColorPicker igColorPicker1;
 		private Label label4;
-		private TextBox textBox1;
 	}
 }

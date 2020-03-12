@@ -43,5 +43,13 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 				ShipCountry = "United States"
 			});
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igHierarchicalGrid1.Options.enableHoverStyles = this.checkBox1.Checked;
+			this.igHierarchicalGrid1.Options.alternateRowStyles = this.checkBox2.Checked;
+
+			this.igHierarchicalGrid1.Update();
+		}
 	}
 }

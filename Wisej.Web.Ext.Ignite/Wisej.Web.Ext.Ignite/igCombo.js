@@ -24,6 +24,11 @@ this.filterEventData = function (args) {
 
     switch (args.type) {
 
+        case "dataBound":
+        case "dataBinding":
+            return {};
+            break;
+
         case "filtered":
         case "filtering":
             return {

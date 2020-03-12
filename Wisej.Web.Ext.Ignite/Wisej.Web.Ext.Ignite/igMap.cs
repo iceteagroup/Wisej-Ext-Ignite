@@ -62,5 +62,6 @@ namespace Wisej.Web.Ext.Ignite
 		}
 
 		#endregion
+
 	}
 }

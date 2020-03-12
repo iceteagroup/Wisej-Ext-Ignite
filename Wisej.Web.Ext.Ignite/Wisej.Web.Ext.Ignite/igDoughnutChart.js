@@ -22,12 +22,21 @@
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
-    // One item
-    if (args.slice.item.__inner != null)
-        return args.slice.item.__inner;
-    else
-        return args.slice; 
+    switch (args.type) {
 
+        case "dataBound":
+        case "dataBinding":
+            return {};
+            break;
+
+        case "sliceClick":
+            if (args.slice.item.__inner != null)
+                return args.slice.item.__inner;
+            else
+                return args.slice.item;
+            break;
+
+    }
 };
 
 /**

@@ -72,6 +72,7 @@
 			this.igShapeChart1.Name = "igShapeChart1";
 			this.igShapeChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igShapeChart1.Options"))));
 			this.igShapeChart1.Size = new System.Drawing.Size(391, 273);
+			this.igShapeChart1.TabIndex = 0;
 			this.igShapeChart1.Text = "igShapeChart1";
 			widgetFunction1.Name = "SetDensityData";
 			widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
@@ -95,7 +96,7 @@
             "polygon",
             "polyline"});
 			this.comboBox1.Label.Text = "Chart Type";
-			this.comboBox1.Location = new System.Drawing.Point(28, 63);
+			this.comboBox1.Location = new System.Drawing.Point(28, 43);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 42);
 			this.comboBox1.TabIndex = 1;

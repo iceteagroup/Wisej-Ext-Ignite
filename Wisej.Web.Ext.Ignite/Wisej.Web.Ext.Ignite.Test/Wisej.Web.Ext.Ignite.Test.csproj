@@ -52,6 +52,9 @@
     <EmbeddedResource Include="Component\igCombo.resx">
       <DependentUpon>igCombo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Component\igGrid.resx">
+      <DependentUpon>igGrid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Component\igHierarchicalGrid.resx">
       <DependentUpon>igHierarchicalGrid.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,7 +109,7 @@
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
     <Content Include="Data\Sparkline\data.json" />
-    <EmbeddedResource Include="Data\Spreadsheet\statistic.xlsx" />
+    <Content Include="Data\Spreadsheet\statistic.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -116,7 +119,17 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\HtmlEditor\ig-html-editor-shutterstock.jpg" />
+    <EmbeddedResource Include="Images\Grid\1.jpg" />
+    <EmbeddedResource Include="Images\Grid\2.jpg" />
+    <EmbeddedResource Include="Images\Grid\3.jpg" />
+    <EmbeddedResource Include="Images\Grid\4.jpg" />
+    <EmbeddedResource Include="Images\Grid\5.jpg" />
+    <EmbeddedResource Include="Images\Grid\6.jpg" />
+    <EmbeddedResource Include="Images\Grid\7.jpg" />
+    <EmbeddedResource Include="Images\Grid\8.jpg" />
+    <EmbeddedResource Include="Images\Grid\9.jpg" />
     <Content Include="Images\ignite.png" />
+    <Content Include="Images\Rating\Avengers.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +186,12 @@
     </Compile>
     <Compile Include="Component\igFinancialChart.Designer.cs">
       <DependentUpon>igFinancialChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\igGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\igGrid.Designer.cs">
+      <DependentUpon>igGrid.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\igHierarchicalGrid.cs">
       <SubType>UserControl</SubType>

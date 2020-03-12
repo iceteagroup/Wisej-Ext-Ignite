@@ -28,3 +28,22 @@ this.filterOptions = function (options) {
     if (wisej.web.DesignMode)
         options.animationDuration = 0;
 };
+
+// Returns a data map that can be converted to JSON.
+this.filterEventData = function (args) {
+
+    switch (args.type) {
+
+        case "nodeClick":
+            return args.node.data;
+            break;
+
+        case "nodeDoubleClick":
+            return {
+                path: args.path,
+                data: args.data
+            };
+            break;
+
+    }
+};

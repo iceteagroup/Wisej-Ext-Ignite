@@ -36,3 +36,8 @@ this.filterEventData = function (args) {
 
 	}
 }
+
+this.initWidget = function () {
+
+	this.getContentElement().setStyle("overflow-y", "visible");
+}

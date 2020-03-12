@@ -33,5 +33,25 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			this.igDataChart1.Call("exportImageData");
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.igDataChart1.Widget.addItem(new {
+				Index = 51,
+				Date = "5/7/2013",
+				Open = 25.72,
+				High = 35.89,
+				Low = 25.22,
+				Close = 25.44,
+				Volume = 49547075
+			});
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igDataChart1.Options.isSquare = this.checkBox1.Checked;
+
+			this.igDataChart1.Update();
+		}
 	}
 }

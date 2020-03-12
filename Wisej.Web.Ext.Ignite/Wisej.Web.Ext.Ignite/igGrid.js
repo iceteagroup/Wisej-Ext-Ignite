@@ -1,4 +1,4 @@
-﻿//# sourceURL=wisej.web.ext.IgniteWidget.igPieChart.js
+﻿//# sourceURL=wisej.web.ext.IgniteWidget.igGrid.js
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -24,35 +24,19 @@ this.filterEventData = function (args) {
 
     switch (args.type) {
 
-        case "sliceClick":
-            if (args.slice.item.__inner)
-                return args.slice.item.__inner;
-            else
-                return args.slice.item;
-            break;
-
-        case "selectedItemChanged":
-        case "selectedItemChanging":
+        case "cellClick":
+        case "cellRightClick":
             return {
-                oldItem: args.oldItem,
-                newItem: args.newItem
+                rowIndex: args.rowIndex,
+                rowKey: args.rowKey,
+                colIndex: args.colIndex,
+                colKey: args.colKey,
             };
             break;
 
-        case "selectedItemsChanged":
-        case "selectedItemsChanging":
-            return {
-                oldItems: args.oldItems,
-                newItems: args.newItems
-            };
-            break;
-
-        case "labelClick":
-            return args.item;
-            break;
-
-        default:
-            return args;
+        case "dataBound":
+        case "dataBinding":
+            return {};
             break;
 
     }

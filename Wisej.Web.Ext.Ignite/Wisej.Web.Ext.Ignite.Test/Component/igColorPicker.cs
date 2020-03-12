@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Drawing;
-using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Test.Component
 {
@@ -26,8 +24,6 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.igColorPicker1.SelectColor(ColorTranslator.FromHtml(this.textBox1.Text));
-
 			this.igColorPicker1.Update();
 		}
 	}

@@ -21,42 +21,37 @@
 namespace Wisej.Web.Ext.Ignite
 {
 	/// <summary>
-	/// The igDoughnutChart displays data similar to a pie chart and can display multiple sets of data around a common center.
+	/// The igGrid control is a jQuery grid that includes user interaction features like filtering, 
+	/// grouping, column hiding and resizing, paging, row and cell selection
 	/// </summary>
-	public class igDoughnutChart : igBase
+	public class igGrid : igBase
 	{
 
 		#region Constructors
 
 		/// <summary>
-		/// Constructs a new instance of the <see cref="igDoughnutChart"/> class.
+		/// Constructs a new instance of the <see cref="igGrid"/> class.
 		/// </summary>
-		public igDoughnutChart() : this(null)
+		public igGrid() : this(null)
 		{
 		}
 
 		/// <summary>
-		/// Constructs a new instance of the <see cref="igDoughnutChart"/> class.
+		/// Constructs a new instance of the <see cref="igGrid"/> class.
 		/// </summary>
 		/// <param name="options"></param>
-		public igDoughnutChart(object options) : base("igDoughnutChart", options)
+		public igGrid(object options) : base("igGrid", options)
 		{
 			this.WidgetWiredEvents = new[] {
-			"browserNotSupported",
+			"cellClick",
+			"cellRightClick",
+			"columnsCollectionModified",
 			"dataBinding",
 			"dataBound",
-			"hideTooltip",
-			"holeDimensionsChanged",
-			"sliceClick",
-			"tooltipHidden",
-			"tooltipHiding",
-			"tooltipShowing",
-			"tooltipShown",
-			"updateTooltip"
 			};
 		}
 
 		#endregion
-	
+
 	}
 }

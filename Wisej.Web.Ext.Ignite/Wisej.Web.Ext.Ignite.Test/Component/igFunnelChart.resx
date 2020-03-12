@@ -121,7 +121,7 @@
     <value>{"transitionDuration":250,"sliceClicked":"clickSlice","leftMargin":20,"valueMemberPath":"Budget","innerLabelMemberPath":"Budget","innerLabelVisibility":"visible","isInverted":true,"dataSource":[{"Budget":30,"Department":"Administration"},{"Budget":50,"Department":"Sales"},{"Budget":60,"Department":"IT"},{"Budget":50,"Department":"Marketing"},{"Budget":100,"Department":"Development"},{"Budget":20,"Department":"Support"}]}</value>
   </data>
   <data name="igFunnelChart1.Options" xml:space="preserve">
-    <value>{"transitionDuration":250,"valueMemberPath":"Budget","innerLabelMemberPath":"Budget","innerLabelVisibility":"visible","outerLabelMemberPath":"Department","outerLabelVisibility":"visible","dataSource":[{"Budget":30,"Department":"Administration"},{"Budget":50,"Department":"Sales"},{"Budget":60,"Department":"IT"},{"Budget":50,"Department":"Marketing"},{"Budget":100,"Department":"Development"},{"Budget":20,"Department":"Support"}]}</value>
+    <value>{"tooltipTemplate":"&lt;span&gt;Budget: $${Budget}&lt;br&gt;Dept: ${Department}&lt;/span&gt;","transitionDuration":250,"valueMemberPath":"Budget","innerLabelMemberPath":"Budget","innerLabelVisibility":"visible","outerLabelMemberPath":"Department","outerLabelVisibility":"visible","dataSource":[{"Budget":30,"Department":"Administration"},{"Budget":50,"Department":"Sales"},{"Budget":60,"Department":"IT"},{"Budget":50,"Department":"Marketing"},{"Budget":100,"Department":"Development"},{"Budget":20,"Department":"Support"}]}</value>
   </data>
   <metadata name="$this.RulerSnapLines" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>

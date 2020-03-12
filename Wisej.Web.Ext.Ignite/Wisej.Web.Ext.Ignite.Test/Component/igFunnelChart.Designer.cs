@@ -33,11 +33,28 @@
 			Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
 			this.label4 = new Wisej.Web.Label();
 			this.label5 = new Wisej.Web.Label();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
 			this.igFunnelChart2 = new Wisej.Web.Ext.Ignite.igFunnelChart();
 			this.igFunnelChart1 = new Wisej.Web.Ext.Ignite.igFunnelChart();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.comboBox1);
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
@@ -81,6 +98,39 @@
 			this.label5.TabIndex = 5;
 			this.label5.Text = "Inverted Funnel Chart";
 			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Location = new System.Drawing.Point(28, 34);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 20;
+			this.checkBox1.Text = "Allow Slice Selection";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.Items.AddRange(new object[] {
+            "uniform",
+            "weighted"});
+			this.comboBox1.Label.Text = "Funnel Slice Display";
+			this.comboBox1.Location = new System.Drawing.Point(28, 164);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(195, 42);
+			this.comboBox1.TabIndex = 21;
+			// 
+			// checkBox2
+			// 
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Location = new System.Drawing.Point(28, 99);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(195, 38);
+			this.checkBox2.TabIndex = 22;
+			this.checkBox2.Text = "Use Bezier Curve";
+			// 
 			// igFunnelChart2
 			// 
 			this.igFunnelChart2.Anchor = Wisej.Web.AnchorStyles.None;
@@ -108,12 +158,14 @@
 			widgetFunction2.Source = "App.MainView.showAlert(arguments[1][\"item\"]);";
 			this.igFunnelChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
         widgetFunction2};
+			this.igFunnelChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
 			// 
 			// igFunnelChart
 			// 
 			this.Name = "igFunnelChart";
 			this.Size = new System.Drawing.Size(1197, 654);
 			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			this.panel.PerformLayout();
 			this.ResumeLayout(false);
@@ -127,5 +179,8 @@
 		private Ignite.igFunnelChart igFunnelChart2;
 		private Label label5;
 		private Label label4;
+		private CheckBox checkBox2;
+		private ComboBox comboBox1;
+		private CheckBox checkBox1;
 	}
 }

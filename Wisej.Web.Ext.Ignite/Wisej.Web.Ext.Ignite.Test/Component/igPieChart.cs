@@ -21,5 +21,21 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+			// Doesn't work because Names are in quotes
+			this.igPieChart1.Widget.addItem(new {
+				Label = this.textBox1.Text,
+				Budget = this.numericUpDown1.Value
+			});
+
+
+			this.igPieChart1.Update();
+
+			// Works
+			//this.igPieChart1.Call("AddItem");
+	}
 	}
 }

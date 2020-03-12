@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Ignite
 	/// The <see cref="igBase"/> class is the foundation of all Ignite UI visual controls.
 	/// </summary>
 	[ToolboxBitmap(typeof(igBase), "igIgnite.bmp")]
-	public abstract class igBase : Widget
+	public abstract class igBase : Widget, IWisejControl
 	{
 		internal const string DEFAULT_THEME = "infragistics";
 		internal const string NAMESPACE = "Wisej.Web.Ext.Ignite";
@@ -241,8 +241,14 @@ namespace Wisej.Web.Ext.Ignite
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/css/structure/infragistics.css")
 					});
 
-					// Ignite UI Required JS Files
-					packages.Add(new Package()
+					//packages.Add(new Package()
+					//{
+					//	Name = "modernizr",
+					//	Source = "http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js"
+					//});
+
+					 // Ignite UI Required JS Files
+					 packages.Add(new Package()
 					{
 						Name = "jquery.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/jquery.min.js")
@@ -252,17 +258,15 @@ namespace Wisej.Web.Ext.Ignite
 						Name = "jquery-ui.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/jquery-ui.min.js")
 					});
-
+					packages.Add(new Package()
+					{
+						Name = "modernizr.js",
+						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/modernizr.min.js")
+					});
 					packages.Add(new Package()
 					{
 						Name = "infragistics.core.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/infragistics.core.js")
-					});
-					packages.Add(new Package()
-					{
-						Name = "infragistics.dv.js",
-						// IMPORTANT TODO: infragistics.dv.js doesn't load correctly, but infragistics-dv.js does 
-						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/infragistics-dv.js")
 					});
 					packages.Add(new Package()
 					{
@@ -271,8 +275,8 @@ namespace Wisej.Web.Ext.Ignite
 					});
 					packages.Add(new Package()
 					{
-						Name = "infragistics.scheduler-bundled.js",
-						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/infragistics.scheduler-bundled.js")
+						Name = "infragistics.dv.js",
+						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/infragistics-dv.js")
 					});
 					packages.Add(new Package()
 					{
@@ -284,7 +288,11 @@ namespace Wisej.Web.Ext.Ignite
 						Name = "infragistics.spreadsheet-bundled.js",
 						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/infragistics.spreadsheet-bundled.js")
 					});
-
+					packages.Add(new Package()
+					{
+						Name = "infragistics.scheduler-bundled.js",
+						Source = this.GetResourceURL($"{RESOURCES_ROOT}/js/infragistics.scheduler-bundled.js")
+					});
 
 					// add locales.
 					if (this.Locales != null)
@@ -419,6 +427,26 @@ namespace Wisej.Web.Ext.Ignite
 		/// <returns></returns>
 		private object CallWidget(string name, object[] args)
 		{
+			// need to add WisejSerializerOptions.None to all object arguments
+			// because the Wisej serializer automatically converts all field names to
+			// camel casing to follow the javascript convention.
+			if (args != null && args.Length > 0)
+			{
+				for (var i = 0; i<args.Length; i++)
+				{
+					if (args[i] != null)
+					{
+						var type = args[i].GetType();
+						if (type.IsPrimitive || type == typeof(string) || type == typeof(DateTime))
+							continue;
+						if (type.GetCustomAttributes(typeof(WisejSerializerOptionsAttribute), true).Length > 0)
+							continue;
+
+						TypeDescriptor.AddAttributes(args[i], new WisejSerializerOptionsAttribute(WisejSerializerOptions.None));
+					}
+				}
+			}
+
 			if (!this.IsInitialized)
 			{
 				if (this.deferredCalls == null)
@@ -427,7 +455,6 @@ namespace Wisej.Web.Ext.Ignite
 				object result = null;
 
 				TaskCompletionSource<dynamic> tcs = null;
-
 				
 				if (name.EndsWith("Async"))
 				{
@@ -438,7 +465,6 @@ namespace Wisej.Web.Ext.Ignite
 
 				this.deferredCalls.Enqueue(new DeferredCall()
 				{
-
 					MethodName = name,
 					Arguments = args,
 					Tcs = tcs
@@ -492,6 +518,15 @@ namespace Wisej.Web.Ext.Ignite
 		#endregion
 
 		#region Wisej Implementation
+
+		/// <summary>
+		/// Designer timeout. The ignite library is a bit slow to
+		/// load in the designer the first time.
+		/// </summary>
+		int IWisejControl.DesignerTimeout
+		{
+			get { return 30000; }
+		}
 
 		/// <summary>
 		/// Processes the event from the client.

@@ -1,5 +1,6 @@
 ﻿using System;
-using Wisej.Web;
+using System.ComponentModel;
+using Wisej.Core;
 
 namespace Wisej.Web.Ext.Ignite.Test.Component
 {
@@ -19,6 +20,19 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			var item = new
+			{
+				Latitude = this.numericUpDown1.Value,
+				Longitude = this.numericUpDown2.Value,
+				Name = textBox1.Text,
+				Country = textBox2.Text
+			};
+
+			this.igMap1.Widget.insertItem(item, 0, "worldCities");
 		}
 	}
 }

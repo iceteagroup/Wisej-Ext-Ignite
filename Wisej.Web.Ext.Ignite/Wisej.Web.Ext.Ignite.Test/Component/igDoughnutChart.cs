@@ -58,7 +58,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		private void button1_Click(object sender, EventArgs e)
 		{
 			// Inserts a new item to the beginning of the dataSource
-			this.igDoughnutChart1.InsertItem(new { CountryName = this.textBox1.Text, Pop1990 = this.numericUpDown1.Value }, 1, 0);
+			this.igDoughnutChart1.Widget.addItem(new { CountryName = this.textBox1.Text, Pop1990 = this.numericUpDown1.Value });
 		}
 	}
 }

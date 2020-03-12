@@ -32,17 +32,27 @@
 			this.igDataChart1 = new Wisej.Web.Ext.Ignite.igDataChart();
 			this.buttonLoad = new Wisej.Web.Upload();
 			this.buttonExportImage = new Wisej.Web.Button();
+			this.button1 = new Wisej.Web.Button();
+			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox1);
+			this.groupBox1.Controls.Add(this.button1);
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonExportImage);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonExportImage, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
+			this.groupBox1.Controls.SetChildIndex(this.button1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
@@ -69,6 +79,7 @@
 			this.igDataChart1.Name = "igDataChart1";
 			this.igDataChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDataChart1.Options"))));
 			this.igDataChart1.Size = new System.Drawing.Size(415, 259);
+			this.igDataChart1.TabIndex = 0;
 			this.igDataChart1.Text = "igDataChart1";
 			// 
 			// buttonLoad
@@ -92,6 +103,26 @@
 			this.buttonExportImage.TabIndex = 16;
 			this.buttonExportImage.Click += new System.EventHandler(this.buttonExportImage_Click);
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(28, 102);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(195, 27);
+			this.button1.TabIndex = 18;
+			this.button1.Text = "Add Item";
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Location = new System.Drawing.Point(28, 38);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(195, 38);
+			this.checkBox1.TabIndex = 20;
+			this.checkBox1.Text = "Is Square";
+			// 
 			// igDataChartIndicator
 			// 
 			this.Name = "igDataChartIndicator";
@@ -107,5 +138,7 @@
 		private Ignite.igDataChart igDataChart1;
 		private Upload buttonLoad;
 		private Button buttonExportImage;
+		private Button button1;
+		private CheckBox checkBox1;
 	}
 }

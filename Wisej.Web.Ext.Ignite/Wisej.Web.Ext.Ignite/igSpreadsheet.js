@@ -49,11 +49,63 @@ this.filterEventData = function (args) {
 				oldActiveWorksheetName: args.oldActiveWorksheetName,
 				newActiveWorksheetName: args.newActiveWorksheetName
 			}
-			break;
+            break;
 
 		default:
-			return args;
+			return {};
 			break;
 
 	}
 }
+
+/**
+ * Loads an excel file at the given url
+ * @param {any} url The url of the excel file to load
+ */
+this.loadWorkbook = function (url) {
+
+    if (!this.widget) {
+        this.addListenerOnce("initialized", function () {
+            this.loadWorkbook(url);
+        });
+        return;
+    }
+
+    this.widget.workbook = null;
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = "arraybuffer";
+
+    var me = this;
+    xhr.onload = function (e) {
+        // response is unsigned 8 bit integer
+        var responseArray = new Uint8Array(this.response);
+        $.ig.excel.Workbook.load(responseArray, function () {
+            workbook = arguments[0];
+            me.widget.option("workbook", workbook);
+            me.widget.workbook = workbook;
+        }, function () {
+            console.log("Failed to load the requested excel workbook");
+        })
+    };
+    xhr.send()
+}
+
+
+this.exportWorkbook = function () {
+
+    if (!this.widget.workbook) {
+        console.log("Workbook doesn't exist");
+        return;
+    }
+
+    var workbook = this.widget.workbook;
+
+    var me = this;
+    workbook.save(function (args) {
+        me.fireWidgetEvent("export", args);
+    }, function (error) {
+        console.log("Error saving the workbook");
+    });
+}
+
