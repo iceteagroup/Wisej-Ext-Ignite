@@ -29,17 +29,20 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igZoombar));
-			Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
 			this.igDataChart1 = new Wisej.Web.Ext.Ignite.igDataChart();
-			this.igZoombar1 = new Wisej.Web.Ext.Ignite.igZoombar();
+			this.panel1 = new Wisej.Web.Panel();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
 			// 
+			// buttonUpdate
+			// 
+			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+			// 
 			// panel
 			// 
+			this.panel.Controls.Add(this.panel1);
 			this.panel.Controls.Add(this.igDataChart1);
-			this.panel.Controls.Add(this.igZoombar1);
 			// 
 			// linkDemo
 			// 
@@ -65,27 +68,21 @@
 			this.igDataChart1.TabIndex = 1;
 			this.igDataChart1.Text = "igDataChart1";
 			this.igDataChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
-			this.igDataChart1.Appear += new System.EventHandler(this.igDataChart1_Appear);
+			this.igDataChart1.Initialized += new System.EventHandler(this.igDataChart1_Initialized);
 			// 
-			// igZoombar1
+			// panel1
 			// 
-			this.igZoombar1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
+			this.panel1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.igZoombar1.Location = new System.Drawing.Point(35, 223);
-			this.igZoombar1.Name = "igZoombar1";
-			this.igZoombar1.Size = new System.Drawing.Size(383, 64);
-			this.igZoombar1.TabIndex = 2;
-			widgetFunction1.Name = "setTarget";
-			widgetFunction1.Source = "var handle = arguments[0];\r\n\r\nthis.widget.option(\"target\", \"#id_\" + handle.toStri" +
-    "ng() + \"_container\");";
-			this.igZoombar1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction1};
-			this.igZoombar1.Appear += new System.EventHandler(this.igZoombar1_Appear);
+			this.panel1.Location = new System.Drawing.Point(35, 228);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(384, 57);
+			this.panel1.TabIndex = 2;
+			this.panel1.TabStop = true;
 			// 
 			// igZoombar
 			// 
 			this.Name = "igZoombar";
-			this.Load += new System.EventHandler(this.igZoombar_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.ResumeLayout(false);
@@ -94,8 +91,7 @@
 		}
 
 		#endregion
-
-		private Ignite.igZoombar igZoombar1;
 		private Ignite.igDataChart igDataChart1;
+		private Panel panel1;
 	}
 }

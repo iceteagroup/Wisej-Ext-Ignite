@@ -18,7 +18,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 			e.Files[0].SaveAs(Application.MapPath("Data/Spreadsheet/temp.xlsx"));
 
 			// Load the path
-			this.igSpreadsheet1.Call("loadWorkbookFile", "Data/Spreadsheet/temp.xlsx");
+			this.igSpreadsheet1.Call("loadWorkbook", "Data/Spreadsheet/temp.xlsx");
 		}
 
 		private void igSpreadsheet1_Appear(object sender, EventArgs e)

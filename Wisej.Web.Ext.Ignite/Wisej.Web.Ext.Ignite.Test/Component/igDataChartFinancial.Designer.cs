@@ -76,6 +76,7 @@
 			this.igDataChart1.Name = "igDataChart1";
 			this.igDataChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDataChart1.Options"))));
 			this.igDataChart1.Size = new System.Drawing.Size(400, 259);
+			this.igDataChart1.TabIndex = 0;
 			this.igDataChart1.Text = "igDataChart1";
 			// 
 			// buttonLoad
@@ -92,7 +93,7 @@
 			// buttonExportImage
 			// 
 			this.buttonExportImage.Display = Wisej.Web.Display.Icon;
-			this.buttonExportImage.ImageSource = "icon-save";
+			this.buttonExportImage.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
 			this.buttonExportImage.Location = new System.Drawing.Point(76, 172);
 			this.buttonExportImage.Name = "buttonExportImage";
 			this.buttonExportImage.Size = new System.Drawing.Size(42, 42);

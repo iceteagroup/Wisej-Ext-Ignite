@@ -88,7 +88,7 @@
 			this.igDoughnutChart1.TabIndex = 0;
 			this.igDoughnutChart1.Text = "igDoughnutChart1";
 			widgetFunction1.Name = "formatLabel";
-			widgetFunction1.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.Pop" +
+			widgetFunction1.Source = "var context = arguments[0];\r\n\r\nreturn context.itemLabel + \" (\" + context.item.pop" +
     "1990 + \")\";\r\n        ";
 			this.igDoughnutChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
         widgetFunction1};

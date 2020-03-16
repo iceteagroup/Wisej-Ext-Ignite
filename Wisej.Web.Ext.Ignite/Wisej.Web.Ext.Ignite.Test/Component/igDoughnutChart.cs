@@ -23,7 +23,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
 		{
-			this.igDoughnutChart1.Options.dataSource = JSON.Parse(e.Files[0].InputStream);
+			this.igDoughnutChart1.Options.series[0].dataSource = JSON.Parse(e.Files[0].InputStream);
 
 			this.igDoughnutChart1.Update();
 		}
@@ -37,7 +37,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 				var sw = new StreamWriter(ms);
 				try
 				{
-					sw.Write(JSON.Stringify(data));
+					// getData returns an array with one element: the array of elements
+					sw.Write(JSON.Stringify(data[0]));
 					sw.Flush();
 					ms.Seek(0, SeekOrigin.Begin);
 
@@ -58,7 +59,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		private void button1_Click(object sender, EventArgs e)
 		{
 			// Inserts a new item to the beginning of the dataSource
-			this.igDoughnutChart1.Widget.addItem(new { CountryName = this.textBox1.Text, Pop1990 = this.numericUpDown1.Value });
+			this.igDoughnutChart1.AddItem(new { CountryName = this.textBox1.Text, Pop1990 = this.numericUpDown1.Value }, 0);
 		}
 	}
 }

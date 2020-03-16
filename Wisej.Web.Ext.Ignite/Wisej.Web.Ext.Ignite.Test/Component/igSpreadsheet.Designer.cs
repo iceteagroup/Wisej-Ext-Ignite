@@ -165,7 +165,6 @@
 			this.igSpreadsheet1.TabIndex = 0;
 			this.igSpreadsheet1.Text = "igSpreadsheet1";
 			this.igSpreadsheet1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[0];
-			this.igSpreadsheet1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.igSpreadsheet1_WidgetEvent);
 			this.igSpreadsheet1.Appear += new System.EventHandler(this.igSpreadsheet1_Appear);
 			// 
 			// igSpreadsheet

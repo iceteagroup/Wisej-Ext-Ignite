@@ -96,7 +96,7 @@
 			// buttonExportImage
 			// 
 			this.buttonExportImage.Display = Wisej.Web.Display.Icon;
-			this.buttonExportImage.ImageSource = "icon-save";
+			this.buttonExportImage.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
 			this.buttonExportImage.Location = new System.Drawing.Point(76, 172);
 			this.buttonExportImage.Name = "buttonExportImage";
 			this.buttonExportImage.Size = new System.Drawing.Size(42, 42);
