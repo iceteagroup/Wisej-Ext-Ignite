@@ -53,13 +53,18 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.igDoughnutChart1.Options.allowSliceExplosion = this.checkBox1.Checked;
+			this.igDoughnutChart1.Options.allowSliceSelection = this.checkBox2.Checked;
+			this.igDoughnutChart1.Options.innerExtent = this.numericUpDown2.Value;
+		
 			this.igDoughnutChart1.Update();
+
 		}
 
 		private void button1_Click(object sender, EventArgs e)
 		{
 			// Inserts a new item to the beginning of the dataSource
-			this.igDoughnutChart1.AddItem(new { CountryName = this.textBox1.Text, Pop1990 = this.numericUpDown1.Value }, 0);
+			this.igDoughnutChart1.AddItem(new { countryName = this.textBox1.Text, pop1990 = this.numericUpDown1.Value }, 0);
 		}
 	}
 }

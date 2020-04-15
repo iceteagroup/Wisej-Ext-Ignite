@@ -1,10 +1,8 @@
 ﻿using System;
-using System.IO;
-using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Test.Component
 {
-	public partial class igTreeGrid : Wisej.Web.Ext.Ignite.Test.Component.TestBase
+	public partial class igTreeGrid : TestBase
 	{
 		public igTreeGrid()
 		{
@@ -34,6 +32,22 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			if (this.checkBox1.Checked)
+				this.igTreeGrid1.Options.features = new[] {
+					new { name = "Paging", mode = "allLevels", pageSize = 13 }
+				};
+			else
+				this.igTreeGrid1.Options.features = new { };
+			
+			this.igTreeGrid1.Options.rowVirtualization = this.checkBox2.Checked;
+			this.igTreeGrid1.Options.showHeader = this.checkBox3.Checked;
+			this.igTreeGrid1.Options.enableHoverStyles = this.checkBox4.Checked;
+
+			this.igTreeGrid1.Update();
 		}
 	}
 }

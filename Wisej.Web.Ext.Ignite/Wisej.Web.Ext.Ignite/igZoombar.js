@@ -28,3 +28,10 @@ this.filterOptions = function (options) {
     if (wisej.web.DesignMode)
         options.hoverStyleAnimationDuration = 0;
 };
+
+this.update = function (options) {
+
+    // All of the properties of the Zoombar require the widget to be recreated
+    this.widget.destroy();
+    this.init(options);
+}

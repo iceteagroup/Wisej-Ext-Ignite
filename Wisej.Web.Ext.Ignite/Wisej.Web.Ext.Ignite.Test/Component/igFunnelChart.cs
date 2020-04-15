@@ -23,9 +23,11 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.igFunnelChart1.Options.transitionDuration = this.numericUpDown1.Value;
 			this.igFunnelChart1.Options.useBezierCurve = this.checkBox2.Checked;
-			this.igFunnelChart1.Options.allowSliceSelection = this.checkBox1.Checked;
 			this.igFunnelChart1.Options.funnelSliceDisplay = this.comboBox1.SelectedItem;
+			this.igFunnelChart1.Options.isInverted = this.checkBox3.Checked;
+			this.igFunnelChart1.Options.bottomEdgeWidth = this.numericUpDown2.Value;
 
 			this.igFunnelChart1.Update();
 		}

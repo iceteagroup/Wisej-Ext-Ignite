@@ -47,6 +47,7 @@ namespace Wisej.Web.Ext.Ignite
 		public igSpreadsheet(object options) : base("igSpreadsheet", options)
 		{
 			this.WidgetWiredEvents = new[] {
+			"export",
 			"actionExecuted",
 			"actionExecuting",
 			"activeCellChanged",

@@ -18,6 +18,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
+using System.ComponentModel;
+
 namespace Wisej.Web.Ext.Ignite
 {
 	/// <summary>
@@ -55,6 +57,31 @@ namespace Wisej.Web.Ext.Ignite
 				"undo",
 				"workspaceResized"
 			};
+		}
+
+		#endregion
+
+		#region Widget Properties
+
+		/// <summary>
+		/// Not applicable for this control
+		/// </summary>
+		[Browsable(false)]
+		[EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+		public override string Text { get => base.Text; set => base.Text = value; }
+
+		#endregion
+
+		#region Widget Functions
+
+		public void SetContent(string value, bool isHtml) 
+		{
+			if (isHtml)
+				this.Widget.setContent(value, "html");
+			else
+				this.Widget.setContent(value, "text");
+
 		}
 
 		#endregion

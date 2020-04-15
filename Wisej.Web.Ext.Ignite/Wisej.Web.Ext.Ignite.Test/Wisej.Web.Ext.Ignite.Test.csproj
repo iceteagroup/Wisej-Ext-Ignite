@@ -49,8 +49,8 @@
     <EmbeddedResource Include="Component\igColorPicker.resx">
       <DependentUpon>igColorPicker.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Component\igCombo.resx">
-      <DependentUpon>igCombo.cs</DependentUpon>
+    <EmbeddedResource Include="Component\igDateEditor.resx">
+      <DependentUpon>igDateEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\igGrid.resx">
       <DependentUpon>igGrid.cs</DependentUpon>
@@ -130,6 +130,17 @@
     <EmbeddedResource Include="Images\Grid\9.jpg" />
     <Content Include="Images\ignite.png" />
     <Content Include="Images\Rating\Avengers.jpg" />
+    <Content Include="Images\Tree\bin_empty.png" />
+    <Content Include="Images\Tree\book.png" />
+    <Content Include="Images\Tree\coins.png" />
+    <Content Include="Images\Tree\coins_add.png" />
+    <Content Include="Images\Tree\computer.png" />
+    <Content Include="Images\Tree\documents-folder.png" />
+    <Content Include="Images\Tree\documents.png" />
+    <Content Include="Images\Tree\door.png" />
+    <Content Include="Images\Tree\door_in.png" />
+    <Content Include="Images\Tree\music.png" />
+    <Content Include="Images\Tree\up.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -151,12 +162,6 @@
     <Compile Include="Component\igColorPicker.Designer.cs">
       <DependentUpon>igColorPicker.cs</DependentUpon>
     </Compile>
-    <Compile Include="Component\igCombo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\igCombo.Designer.cs">
-      <DependentUpon>igCombo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Component\igDataChart.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +179,12 @@
     </Compile>
     <Compile Include="Component\igDataChartIndicator.Designer.cs">
       <DependentUpon>igDataChartIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\igDateEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\igDateEditor.Designer.cs">
+      <DependentUpon>igDateEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\igDoughnutChart.cs">
       <SubType>UserControl</SubType>

@@ -58,6 +58,9 @@
     <Compile Include="igDataChart.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="igDateEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="igDoughnutChart.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -228,9 +231,12 @@
     <EmbeddedResource Include="igColorPicker.js">
       <DependentUpon>igColorPicker.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="igHtmlEditor.js">
+    <EmbeddedResource Include="igDateEditor.js">
+      <DependentUpon>igDateEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igHtmlEditor.js">
       <DependentUpon>igHtmlEditor.cs</DependentUpon>
-    </Content>
+    </EmbeddedResource>
     <EmbeddedResource Include="IgniteUI\css\structure\fonts\jquery-ui.svg" />
     <EmbeddedResource Include="IgniteUI\css\structure\images\icon_sprite.png" />
     <EmbeddedResource Include="IgniteUI\css\structure\images\igBrowserLogos.png" />
@@ -316,9 +322,9 @@
     <Content Include="igSplitButton.js">
       <DependentUpon>igSplitButton.cs</DependentUpon>
     </Content>
-    <Content Include="igVideoPlayer.js">
+    <EmbeddedResource Include="igVideoPlayer.js">
       <DependentUpon>igVideoPlayer.cs</DependentUpon>
-    </Content>
+    </EmbeddedResource>
     <EmbeddedResource Include="IgniteUI\css\structure\infragistics.css" />
     <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\icons-styles.css" />
     <EmbeddedResource Include="IgniteUI\css\themes\bootstrap3\default\images\icon_sprite.png" />

@@ -82,12 +82,13 @@
 			this.igRadialGauge1.Name = "igRadialGauge1";
 			this.igRadialGauge1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"transitionDuration\":250,\"isNeedleDraggingEnabled\":true}")));
 			this.igRadialGauge1.Size = new System.Drawing.Size(338, 307);
+			this.igRadialGauge1.TabIndex = 0;
 			this.igRadialGauge1.Text = "igRadialGauge1";
 			this.igRadialGauge1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[0];
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(28, 113);
+			this.button2.Location = new System.Drawing.Point(28, 115);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(195, 27);
 			this.button2.TabIndex = 3;
@@ -100,7 +101,7 @@
 			this.numericUpDown1.Label.Size = 50;
 			this.numericUpDown1.Label.SizeType = Wisej.Web.SizeType.Percent;
 			this.numericUpDown1.Label.Text = "Value";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 30);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 24);
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 55);
 			this.numericUpDown1.TabIndex = 4;
@@ -109,7 +110,7 @@
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(28, 157);
+			this.button1.Location = new System.Drawing.Point(28, 178);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(195, 27);
 			this.button1.TabIndex = 5;
@@ -118,7 +119,7 @@
 			// 
 			// button3
 			// 
-			this.button3.Location = new System.Drawing.Point(28, 204);
+			this.button3.Location = new System.Drawing.Point(28, 241);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(195, 27);
 			this.button3.TabIndex = 6;

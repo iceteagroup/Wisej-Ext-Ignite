@@ -33,27 +33,36 @@
 			this.buttonLoad = new Wisej.Web.Upload();
 			this.buttonExportImage = new Wisej.Web.Button();
 			this.comboBox1 = new Wisej.Web.ComboBox();
+			this.comboBox2 = new Wisej.Web.ComboBox();
+			this.comboBox3 = new Wisej.Web.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.comboBox3);
+			this.groupBox1.Controls.Add(this.comboBox2);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonExportImage);
+			this.groupBox1.Size = new System.Drawing.Size(250, 444);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonExportImage, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.comboBox3, 0);
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 363);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igDataChart1);
+			this.panel.Size = new System.Drawing.Size(502, 444);
 			// 
 			// linkDemo
 			// 
@@ -75,7 +84,7 @@
 			this.igDataChart1.Location = new System.Drawing.Point(26, 26);
 			this.igDataChart1.Name = "igDataChart1";
 			this.igDataChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDataChart1.Options"))));
-			this.igDataChart1.Size = new System.Drawing.Size(400, 259);
+			this.igDataChart1.Size = new System.Drawing.Size(447, 388);
 			this.igDataChart1.TabIndex = 0;
 			this.igDataChart1.Text = "igDataChart1";
 			// 
@@ -84,7 +93,7 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 172);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 302);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
 			this.buttonLoad.TabIndex = 17;
@@ -94,7 +103,7 @@
 			// 
 			this.buttonExportImage.Display = Wisej.Web.Display.Icon;
 			this.buttonExportImage.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-			this.buttonExportImage.Location = new System.Drawing.Point(76, 172);
+			this.buttonExportImage.Location = new System.Drawing.Point(76, 302);
 			this.buttonExportImage.Name = "buttonExportImage";
 			this.buttonExportImage.Size = new System.Drawing.Size(42, 42);
 			this.buttonExportImage.TabIndex = 16;
@@ -107,15 +116,43 @@
             "dragZoom",
             "dragPan"});
 			this.comboBox1.Label.Text = "Default Interaction";
-			this.comboBox1.Location = new System.Drawing.Point(28, 38);
+			this.comboBox1.Location = new System.Drawing.Point(28, 24);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 42);
+			this.comboBox1.Size = new System.Drawing.Size(195, 41);
 			this.comboBox1.TabIndex = 18;
 			this.comboBox1.Text = "dragZoom";
+			// 
+			// comboBox2
+			// 
+			this.comboBox2.Items.AddRange(new object[] {
+            "none",
+            "alt",
+            "control",
+            "shift"});
+			this.comboBox2.Label.Text = "Drag Modifier";
+			this.comboBox2.Location = new System.Drawing.Point(28, 122);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(195, 41);
+			this.comboBox2.TabIndex = 19;
+			this.comboBox2.Text = "none";
+			// 
+			// comboBox3
+			// 
+			this.comboBox3.Items.AddRange(new object[] {
+            "none",
+            "beforeSeries",
+            "behindSeries"});
+			this.comboBox3.Label.Text = "Grid Mode";
+			this.comboBox3.Location = new System.Drawing.Point(28, 220);
+			this.comboBox3.Name = "comboBox3";
+			this.comboBox3.Size = new System.Drawing.Size(195, 41);
+			this.comboBox3.TabIndex = 20;
+			this.comboBox3.Text = "behindSeries";
 			// 
 			// igDataChartFinancial
 			// 
 			this.Name = "igDataChartFinancial";
+			this.Size = new System.Drawing.Size(911, 634);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
@@ -130,5 +167,7 @@
 		private Upload buttonLoad;
 		private Button buttonExportImage;
 		private ComboBox comboBox1;
+		private ComboBox comboBox2;
+		private ComboBox comboBox3;
 	}
 }

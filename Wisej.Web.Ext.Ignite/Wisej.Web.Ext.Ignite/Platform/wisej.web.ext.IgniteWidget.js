@@ -151,6 +151,13 @@ qx.Class.define("wisej.web.ext.IgniteWidget", {
 			}
 		},
 
+		// destroys and recreates the current widget
+		// with the given configuration
+		recreateWidget: function (options) {
+			this.widget.destroy();
+			this.init(options);
+		},
+
 		// registers the user functions with this widget class.
 		// if their names collide with existing functions they will
 		// override them. collisions are logged in the console.

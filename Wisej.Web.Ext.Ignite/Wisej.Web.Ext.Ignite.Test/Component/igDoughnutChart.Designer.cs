@@ -37,32 +37,42 @@
 			this.numericUpDown1 = new Wisej.Web.NumericUpDown();
 			this.groupBox2 = new Wisej.Web.GroupBox();
 			this.button1 = new Wisej.Web.Button();
+			this.checkBox1 = new Wisej.Web.CheckBox();
+			this.checkBox2 = new Wisej.Web.CheckBox();
+			this.numericUpDown2 = new Wisej.Web.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			this.groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.numericUpDown2);
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.groupBox2);
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonExportData);
-			this.groupBox1.Size = new System.Drawing.Size(250, 369);
+			this.groupBox1.Size = new System.Drawing.Size(250, 566);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonExportData, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
 			this.groupBox1.Controls.SetChildIndex(this.groupBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 288);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 485);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igDoughnutChart1);
-			this.panel.Size = new System.Drawing.Size(455, 369);
+			this.panel.Size = new System.Drawing.Size(455, 566);
 			// 
 			// linkDemo
 			// 
@@ -84,7 +94,7 @@
 			this.igDoughnutChart1.Location = new System.Drawing.Point(23, 19);
 			this.igDoughnutChart1.Name = "igDoughnutChart1";
 			this.igDoughnutChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDoughnutChart1.Options"))));
-			this.igDoughnutChart1.Size = new System.Drawing.Size(407, 328);
+			this.igDoughnutChart1.Size = new System.Drawing.Size(407, 525);
 			this.igDoughnutChart1.TabIndex = 0;
 			this.igDoughnutChart1.Text = "igDoughnutChart1";
 			widgetFunction1.Name = "formatLabel";
@@ -98,7 +108,7 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 240);
+			this.buttonLoad.Location = new System.Drawing.Point(29, 424);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
 			this.buttonLoad.TabIndex = 17;
@@ -108,7 +118,7 @@
 			// 
 			this.buttonExportData.Display = Wisej.Web.Display.Icon;
 			this.buttonExportData.ImageSource = "icon-save";
-			this.buttonExportData.Location = new System.Drawing.Point(76, 240);
+			this.buttonExportData.Location = new System.Drawing.Point(77, 424);
 			this.buttonExportData.Name = "buttonExportData";
 			this.buttonExportData.Size = new System.Drawing.Size(42, 42);
 			this.buttonExportData.TabIndex = 16;
@@ -119,7 +129,7 @@
 			this.textBox1.Label.Text = "Country Name";
 			this.textBox1.Location = new System.Drawing.Point(9, 21);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(195, 42);
+			this.textBox1.Size = new System.Drawing.Size(195, 41);
 			this.textBox1.TabIndex = 18;
 			this.textBox1.Text = "Canada";
 			// 
@@ -133,7 +143,7 @@
             0,
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 42);
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
 			this.numericUpDown1.TabIndex = 19;
 			this.numericUpDown1.Value = new decimal(new int[] {
             100,
@@ -146,7 +156,7 @@
 			this.groupBox2.Controls.Add(this.button1);
 			this.groupBox2.Controls.Add(this.numericUpDown1);
 			this.groupBox2.Controls.Add(this.textBox1);
-			this.groupBox2.Location = new System.Drawing.Point(20, 26);
+			this.groupBox2.Location = new System.Drawing.Point(19, 26);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(213, 187);
 			this.groupBox2.TabIndex = 20;
@@ -161,15 +171,56 @@
 			this.button1.Text = "Add";
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
+			// checkBox1
+			// 
+			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox1.AutoSize = false;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox1.Checked = true;
+			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox1.Location = new System.Drawing.Point(29, 235);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(194, 38);
+			this.checkBox1.TabIndex = 23;
+			this.checkBox1.Text = "Allow Slice Explosion";
+			// 
+			// checkBox2
+			// 
+			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox2.AutoSize = false;
+			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox2.Checked = true;
+			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox2.Location = new System.Drawing.Point(28, 302);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(194, 38);
+			this.checkBox2.TabIndex = 24;
+			this.checkBox2.Text = "Allow Slice Selection";
+			// 
+			// numericUpDown2
+			// 
+			this.numericUpDown2.Label.Text = "Inner Extent";
+			this.numericUpDown2.Location = new System.Drawing.Point(29, 369);
+			this.numericUpDown2.Name = "numericUpDown2";
+			this.numericUpDown2.Size = new System.Drawing.Size(194, 41);
+			this.numericUpDown2.TabIndex = 25;
+			this.numericUpDown2.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+			// 
 			// igDoughnutChart
 			// 
 			this.Name = "igDoughnutChart";
-			this.Size = new System.Drawing.Size(864, 559);
+			this.Size = new System.Drawing.Size(864, 756);
 			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -184,5 +235,8 @@
 		private TextBox textBox1;
 		private GroupBox groupBox2;
 		private Button button1;
+		private NumericUpDown numericUpDown2;
+		private CheckBox checkBox2;
+		private CheckBox checkBox1;
 	}
 }

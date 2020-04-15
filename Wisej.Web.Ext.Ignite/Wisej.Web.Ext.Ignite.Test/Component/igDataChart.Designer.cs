@@ -95,7 +95,7 @@
 			this.textBox1.Label.Text = "Title";
 			this.textBox1.Location = new System.Drawing.Point(6, 33);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(183, 42);
+			this.textBox1.Size = new System.Drawing.Size(183, 41);
 			this.textBox1.TabIndex = 1;
 			// 
 			// textBox2
@@ -103,7 +103,7 @@
 			this.textBox2.Label.Text = "Subtitle";
 			this.textBox2.Location = new System.Drawing.Point(7, 92);
 			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(182, 42);
+			this.textBox2.Size = new System.Drawing.Size(182, 41);
 			this.textBox2.TabIndex = 2;
 			// 
 			// comboBox1
@@ -121,7 +121,7 @@
 			this.comboBox1.Label.Text = "Title Color";
 			this.comboBox1.Location = new System.Drawing.Point(6, 150);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(183, 42);
+			this.comboBox1.Size = new System.Drawing.Size(183, 41);
 			this.comboBox1.TabIndex = 3;
 			this.comboBox1.Text = "black";
 			// 
@@ -166,7 +166,7 @@
 			this.comboBox2.Label.Text = "Population Year";
 			this.comboBox2.Location = new System.Drawing.Point(28, 308);
 			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(195, 42);
+			this.comboBox2.Size = new System.Drawing.Size(195, 41);
 			this.comboBox2.TabIndex = 17;
 			this.comboBox2.Text = "Pop2015";
 			// 
@@ -176,7 +176,7 @@
 			this.groupBox2.Controls.Add(this.comboBox1);
 			this.groupBox2.Controls.Add(this.textBox2);
 			this.groupBox2.Controls.Add(this.textBox1);
-			this.groupBox2.Location = new System.Drawing.Point(28, 30);
+			this.groupBox2.Location = new System.Drawing.Point(28, 24);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(195, 250);
 			this.groupBox2.TabIndex = 18;

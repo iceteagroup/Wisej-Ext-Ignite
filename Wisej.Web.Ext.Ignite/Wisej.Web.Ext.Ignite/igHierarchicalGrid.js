@@ -35,9 +35,25 @@ this.filterEventData = function (args) {
 			break;
 
 	}
-}
+};
 
 this.initWidget = function () {
 
 	this.getContentElement().setStyle("overflow-y", "visible");
-}
+};
+
+
+this.update = function (options, old) {
+
+	// Some properties require the widget to be recreated
+	if (old.enableHoverStyles !== options.enableHoverStyles) {
+		this.widget.destroy();
+		this.init(options);
+	} else {
+		// Otherwise perform the normal update
+		if (this.filterOptions)
+			this.filterOptions(options, old);
+
+		this.widget.option(options);
+	}
+};

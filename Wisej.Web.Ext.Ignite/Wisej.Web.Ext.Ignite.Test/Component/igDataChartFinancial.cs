@@ -37,6 +37,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igDataChart1.Options.defaultInteraction = this.comboBox1.SelectedItem;
+			this.igDataChart1.Options.dragModifier = this.comboBox2.SelectedItem;
+			this.igDataChart1.Options.gridMode = this.comboBox3.SelectedItem;
 
 			this.igDataChart1.Update();
 		}

@@ -27,6 +27,11 @@ this.filterOptions = function (options) {
 
     if (wisej.web.DesignMode)
         options.animationDuration = 0;
+
+    if (options.dragAndDropSettings)
+        if (options.dragAndDropSettings.customDropValidation)
+            options.dragAndDropSettings.customDropValidation = this.initFunction(options.dragAndDropSettings.customDropValidation);
+
 };
 
 // Returns a data map that can be converted to JSON.
@@ -43,6 +48,25 @@ this.filterEventData = function (args) {
                 path: args.path,
                 data: args.data
             };
+            break;
+
+    }
+};
+
+this.update = function (options, old) {
+
+    switch (true) {
+
+        // Some properties require the widget to be recreated
+        case (old.initialExpandDepth !== options.initialExpandDepth):
+            this.recreateWidget(options);
+            break;
+        default:
+            // Otherwise perform the normal update
+            if (this.filterOptions)
+                this.filterOptions(options, old);
+
+            this.widget.option(options);
             break;
 
     }

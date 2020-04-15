@@ -9,6 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
+			this.igSpreadsheet1.Widget.export += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
 			this.igSpreadsheet1.Widget.activeWorksheetChanged += new WidgetEventHandler(igSpreadsheet1_WidgetEvent);
 		}
 
@@ -30,6 +31,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			this.igSpreadsheet1.Options.activeCell = this.textBox1.Text;
 			this.igSpreadsheet1.Options.zoomLevel = this.numericUpDown1.Value;
+			this.igSpreadsheet1.Options.allowAddWorksheet = this.checkBox2.Checked;
+			this.igSpreadsheet1.Options.areGridlinesVisible = this.checkBox3.Checked;
 			this.igSpreadsheet1.Options.isFormulaBarVisible = this.checkBox1.Checked;
 			this.igSpreadsheet1.Options.enterKeyNavigationDirection = this.comboBox1.SelectedItem;
 

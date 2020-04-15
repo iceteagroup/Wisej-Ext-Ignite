@@ -36,3 +36,35 @@ this.filterEventData = function (args) {
 
     }
 };
+
+/**
+ * Process the options map before it is used to
+ * create or update the widget.
+ */
+this.filterOptions = function (options) {
+
+    if (wisej.web.DesignMode)
+        options.transitionDuration = 0;
+
+};
+
+this.update = function (options, old) {
+
+    // Some properties require the widget to be recreated
+    switch (true) {
+
+        case (old.features !== options.features):
+        case (old.enableHoverStyles !== options.enableHoverStyles):
+            this.recreateWidget(options);
+            break;
+
+        default:
+            // Otherwise perform the normal update
+            if (this.filterOptions)
+                this.filterOptions(options, old);
+
+            this.widget.option(options);
+            break;
+
+    }
+};

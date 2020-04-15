@@ -1,9 +1,8 @@
 ﻿using System;
-using Wisej.Web;
 
 namespace Wisej.Web.Ext.Ignite.Test.Component
 {
-	public partial class igTree : Wisej.Web.Ext.Ignite.Test.Component.TestBase
+	public partial class igTree : TestBase
 	{
 		public igTree()
 		{
@@ -13,16 +12,6 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 			this.igTree1.Widget.nodeExpanded += new WidgetEventHandler(igTree_WidgetEvent);
 		}
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			this.igTree1.Widget.addNode(new {
-				ID = 4,
-				RegionName = this.textBox1.Text,
-			});
-
-			this.igTree1.Update();
-		}
-
 		private void igTree_WidgetEvent(object sender, WidgetEventArgs e)
 		{
 			AlertBox.Show(
@@ -30,6 +19,14 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 				MessageBoxIcon.Information);
 
 			Application.Play(MessageBoxIcon.Information);
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igTree1.Options.checkboxMode = this.comboBox1.SelectedItem;
+			this.igTree1.Options.singleBranchExpand = this.checkBox1.Checked;
+		
+			this.igTree1.Update();
 		}
 	}
 }

@@ -55,8 +55,17 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			this.igGrid1.Options.enableHoverStyles = this.checkBox1.Checked;
 			this.igGrid1.Options.alternateRowStyles = this.checkBox2.Checked;
+			this.igGrid1.Options.showFooter = this.checkBox3.Checked;
+			this.igGrid1.Options.showHeader = this.checkBox4.Checked;
 
 			this.igGrid1.Update();
+		}
+
+		private async void button1_Click(object sender, EventArgs e)
+		{
+			var result = await this.igGrid1.Widget.getCellValueAsync(1, "ProductName");
+
+			AlertBox.Show(result);
 		}
 	}
 }

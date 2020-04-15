@@ -42,11 +42,6 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igBulletGraph(object options) : base("igBulletGraph", options)
 		{
-			if (!this.Packages.Exists(i => { return i.Name.Equals(""); }))
-			{
-				
-			}
-
 			this.WidgetWiredEvents = new[] {
 			"alignLabel",
 			"formatLabel"

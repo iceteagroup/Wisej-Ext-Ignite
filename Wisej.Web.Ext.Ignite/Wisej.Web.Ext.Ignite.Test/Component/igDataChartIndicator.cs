@@ -50,6 +50,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
 			this.igDataChart1.Options.isSquare = this.checkBox1.Checked;
+			this.igDataChart1.Options.isHorizontalZoomEnabled = this.checkBox2.Checked;
+			this.igDataChart1.Options.highlightingTransitionDuration = this.numericUpDown1.Value;
 
 			this.igDataChart1.Update();
 		}

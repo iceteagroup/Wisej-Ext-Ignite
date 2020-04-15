@@ -16,6 +16,9 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			this.igShapeChart1.Options.title = this.comboBox1.SelectedItem;
 			this.igShapeChart1.Options.chartType = this.comboBox1.SelectedItem;
+			this.igShapeChart1.Options.crosshairsDisplayMode = this.comboBox2.SelectedItem;
+			this.igShapeChart1.Options.isHorizontalZoomEnabled = this.checkBox1.Checked;
+			this.igShapeChart1.Options.isVerticalZoomEnabled = this.checkBox2.Checked;
 
 			switch (this.comboBox1.SelectedItem)
 			{

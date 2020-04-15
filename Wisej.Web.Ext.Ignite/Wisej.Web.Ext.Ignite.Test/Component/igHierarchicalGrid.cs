@@ -48,6 +48,9 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			this.igHierarchicalGrid1.Options.enableHoverStyles = this.checkBox1.Checked;
 			this.igHierarchicalGrid1.Options.alternateRowStyles = this.checkBox2.Checked;
+			this.igHierarchicalGrid1.Options.expandCollapseAnimations = this.checkBox3.Checked;
+			this.igHierarchicalGrid1.Options.fixedFooters = this.checkBox4.Checked;
+			this.igHierarchicalGrid1.Options.fixedHeaders = this.checkBox5.Checked;
 
 			this.igHierarchicalGrid1.Update();
 		}

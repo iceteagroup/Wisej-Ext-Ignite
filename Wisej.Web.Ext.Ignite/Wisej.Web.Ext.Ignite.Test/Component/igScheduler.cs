@@ -33,7 +33,10 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private async void button1_Click(object sender, EventArgs e)
 		{
-			var data = await this.igScheduler1.CallAsync("getAppointmentsInRange", this.dateTimePicker1.Value, this.dateTimePicker2.Value);
+			var start = this.dateTimePicker1.Value.ToJSON(false);
+			var end = this.dateTimePicker2.Value.ToJSON(false);
+
+			var data = await this.igScheduler1.CallAsync("getAppointmentsInRange", start, end);
 
 			using (MemoryStream ms = new MemoryStream())
 			{
@@ -51,6 +54,16 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 					sw.Dispose();
 				}
 			}
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igScheduler1.Options.enableTodayButton = this.checkBox1.Checked;
+			this.igScheduler1.Options.viewMode = this.comboBox1.SelectedItem ?? "none";
+			this.igScheduler1.Options.appointmentDialogSuppress = this.checkBox2.Checked;
+			this.igScheduler1.Options.agendaViewSettings.dateRangeInterval = this.numericUpDown1.Value;
+
+			this.igScheduler1.Update();
 		}
 	}
 }

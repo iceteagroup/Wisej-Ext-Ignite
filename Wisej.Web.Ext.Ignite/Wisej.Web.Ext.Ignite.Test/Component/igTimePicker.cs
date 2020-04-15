@@ -20,5 +20,15 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 			Application.Play(MessageBoxIcon.Information);
 		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igTimePicker1.Options.readOnly = this.checkBox2.Checked;
+			this.igTimePicker1.Options.buttonType = this.comboBox1.SelectedItem;
+			this.igTimePicker1.Options.preventSubmitOnEnter = this.checkBox3.Checked;
+			this.igTimePicker1.Options.isLimitedToListValues = this.checkBox1.Checked;
+
+			this.igTimePicker1.Update();
+		}
 	}
 }

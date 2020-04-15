@@ -19,3 +19,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+this.update = function (options, old) {
+
+    if (this.filterOptions)
+        this.filterOptions(options, old);
+
+    this.widget.option(options);
+
+	this.widget.setContent(options.value, "html");
+}

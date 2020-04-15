@@ -37,5 +37,16 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 			// Works
 			//this.igPieChart1.Call("AddItem");
 	}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igPieChart1.Options.allowSliceExplosion = this.checkBox1.Checked;
+			this.igPieChart1.Options.allowSliceSelection = this.checkBox2.Checked;
+			this.igPieChart1.Options.explodedRadius = this.numericUpDown2.Value;
+			this.igPieChart1.Options.selectionMode = this.comboBox1.SelectedItem;
+			this.igPieChart1.Options.sweepDirection = this.comboBox2.SelectedItem;
+
+			this.igPieChart1.Update();
+		}
 	}
 }

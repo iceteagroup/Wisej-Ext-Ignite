@@ -96,7 +96,7 @@
 			this.groupBox2.Controls.Add(this.numericUpDown2);
 			this.groupBox2.Controls.Add(this.numericUpDown1);
 			this.groupBox2.Controls.Add(this.textBox1);
-			this.groupBox2.Location = new System.Drawing.Point(25, 37);
+			this.groupBox2.Location = new System.Drawing.Point(25, 24);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(200, 342);
 			this.groupBox2.TabIndex = 1;
@@ -107,7 +107,7 @@
 			this.textBox2.Label.Text = "Country";
 			this.textBox2.Location = new System.Drawing.Point(6, 93);
 			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(188, 42);
+			this.textBox2.Size = new System.Drawing.Size(188, 41);
 			this.textBox2.TabIndex = 5;
 			// 
 			// button1
@@ -125,7 +125,7 @@
 			this.numericUpDown2.Label.Text = "Longitude";
 			this.numericUpDown2.Location = new System.Drawing.Point(6, 237);
 			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(188, 42);
+			this.numericUpDown2.Size = new System.Drawing.Size(188, 41);
 			this.numericUpDown2.TabIndex = 3;
 			// 
 			// numericUpDown1
@@ -134,7 +134,7 @@
 			this.numericUpDown1.Label.Text = "Latitude";
 			this.numericUpDown1.Location = new System.Drawing.Point(6, 165);
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(188, 42);
+			this.numericUpDown1.Size = new System.Drawing.Size(188, 41);
 			this.numericUpDown1.TabIndex = 2;
 			// 
 			// textBox1
@@ -142,7 +142,7 @@
 			this.textBox1.Label.Text = "Name";
 			this.textBox1.Location = new System.Drawing.Point(6, 21);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(188, 42);
+			this.textBox1.Size = new System.Drawing.Size(188, 41);
 			this.textBox1.TabIndex = 0;
 			// 
 			// igMap

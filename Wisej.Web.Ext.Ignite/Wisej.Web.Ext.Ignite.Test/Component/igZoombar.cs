@@ -14,6 +14,10 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
+			this.igZoombar1.Options.zoomWindowMoveDistance = this.numericUpDown1.Value;
+			this.igZoombar1.Options.zoomWindowMinWidth = this.numericUpDown2.Value;
+			this.igZoombar1.Options.windowPanDuration = this.numericUpDown3.Value;
+
 			this.igZoombar1.Update();
 		}
 

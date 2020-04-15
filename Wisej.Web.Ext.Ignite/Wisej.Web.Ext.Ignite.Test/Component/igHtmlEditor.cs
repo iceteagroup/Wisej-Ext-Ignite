@@ -34,7 +34,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 			{
 				var text = streamReader.ReadToEnd();
 
-				this.igHtmlEditor1.Widget.setContent(text, "html");
+				this.igHtmlEditor1.SetContent(text, true);
 			}
 		}
 
@@ -58,6 +58,15 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 					sw.Dispose();
 				}
 			}
+		}
+
+		private void buttonUpdate_Click(object sender, EventArgs e)
+		{
+			this.igHtmlEditor1.Options.showCopyPasteToolbar = this.checkBox1.Checked;
+			this.igHtmlEditor1.Options.showFormattingToolbar = this.checkBox2.Checked;
+			this.igHtmlEditor1.Options.showInsertObjectToolbar = this.checkBox3.Checked;
+
+			this.igHtmlEditor1.Update();
 		}
 	}
 }

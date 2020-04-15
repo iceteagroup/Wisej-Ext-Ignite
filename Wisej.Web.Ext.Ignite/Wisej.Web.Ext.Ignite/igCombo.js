@@ -49,7 +49,7 @@ this.filterEventData = function (args) {
             break;
 
     }
-}
+};
 
 /**
  * Process the options map before it is used to

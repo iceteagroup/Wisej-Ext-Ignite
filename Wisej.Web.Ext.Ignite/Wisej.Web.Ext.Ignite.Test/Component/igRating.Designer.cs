@@ -88,15 +88,20 @@
             0,
             131072});
 			this.numericUpDown1.Label.Text = "Set Value";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 58);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 137);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 42);
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
 			this.numericUpDown1.TabIndex = 1;
+			this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			// 
 			// pictureBox1
 			// 

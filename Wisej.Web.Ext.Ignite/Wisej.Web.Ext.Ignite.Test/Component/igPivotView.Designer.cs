@@ -35,6 +35,9 @@
 			this.checkBox1 = new Wisej.Web.CheckBox();
 			this.checkBox2 = new Wisej.Web.CheckBox();
 			this.checkBox3 = new Wisej.Web.CheckBox();
+			this.checkBox4 = new Wisej.Web.CheckBox();
+			this.checkBox5 = new Wisej.Web.CheckBox();
+			this.checkBox6 = new Wisej.Web.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -42,26 +45,32 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox6);
+			this.groupBox1.Controls.Add(this.checkBox5);
+			this.groupBox1.Controls.Add(this.checkBox4);
 			this.groupBox1.Controls.Add(this.checkBox3);
 			this.groupBox1.Controls.Add(this.checkBox2);
 			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.numericUpDown1);
-			this.groupBox1.Size = new System.Drawing.Size(250, 415);
+			this.groupBox1.Size = new System.Drawing.Size(250, 590);
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox3, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox4, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox5, 0);
+			this.groupBox1.Controls.SetChildIndex(this.checkBox6, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 334);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 509);
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igPivotView1);
-			this.panel.Size = new System.Drawing.Size(718, 415);
+			this.panel.Size = new System.Drawing.Size(718, 590);
 			// 
 			// linkDemo
 			// 
@@ -83,8 +92,8 @@
 			this.igPivotView1.Location = new System.Drawing.Point(20, 24);
 			this.igPivotView1.Name = "igPivotView1";
 			this.igPivotView1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"pivotGridOptions\":{\"allowSorting\":true,\"compactColumnHeaders\":true,\"gridOptions" +
-        "\":{\"alternateRowStyles\":true}}}")));
-			this.igPivotView1.Size = new System.Drawing.Size(676, 364);
+        "\":{\"alternateRowStyles\":true}},\"pivotGridPanel\":{\"collapsible\":false}}")));
+			this.igPivotView1.Size = new System.Drawing.Size(676, 539);
 			this.igPivotView1.TabIndex = 0;
 			this.igPivotView1.Text = "igPivotView1";
 			widgetFunction1.Name = "loadTheData";
@@ -95,9 +104,9 @@
 			// numericUpDown1
 			// 
 			this.numericUpDown1.Label.Text = "Default Row Header Width";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 39);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 23);
 			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(195, 42);
+			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
 			this.numericUpDown1.TabIndex = 1;
 			// 
 			// checkBox1
@@ -107,7 +116,7 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 114);
+			this.checkBox1.Location = new System.Drawing.Point(28, 93);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
 			this.checkBox1.TabIndex = 21;
@@ -120,7 +129,7 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 185);
+			this.checkBox2.Location = new System.Drawing.Point(28, 160);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
 			this.checkBox2.TabIndex = 22;
@@ -133,16 +142,55 @@
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox3.Checked = true;
 			this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox3.Location = new System.Drawing.Point(28, 256);
+			this.checkBox3.Location = new System.Drawing.Point(28, 227);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
 			this.checkBox3.TabIndex = 23;
 			this.checkBox3.Text = "Compact Column Headers";
 			// 
+			// checkBox4
+			// 
+			this.checkBox4.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox4.AutoSize = false;
+			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox4.Checked = true;
+			this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox4.Location = new System.Drawing.Point(28, 294);
+			this.checkBox4.Name = "checkBox4";
+			this.checkBox4.Size = new System.Drawing.Size(195, 38);
+			this.checkBox4.TabIndex = 24;
+			this.checkBox4.Text = "Fixed Headers";
+			// 
+			// checkBox5
+			// 
+			this.checkBox5.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox5.AutoSize = false;
+			this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox5.Checked = true;
+			this.checkBox5.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox5.Location = new System.Drawing.Point(28, 361);
+			this.checkBox5.Name = "checkBox5";
+			this.checkBox5.Size = new System.Drawing.Size(195, 38);
+			this.checkBox5.TabIndex = 25;
+			this.checkBox5.Text = "Hide Columns Drop Area";
+			// 
+			// checkBox6
+			// 
+			this.checkBox6.Appearance = Wisej.Web.Appearance.Switch;
+			this.checkBox6.AutoSize = false;
+			this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.checkBox6.Checked = true;
+			this.checkBox6.CheckState = Wisej.Web.CheckState.Checked;
+			this.checkBox6.Location = new System.Drawing.Point(28, 428);
+			this.checkBox6.Name = "checkBox6";
+			this.checkBox6.Size = new System.Drawing.Size(195, 38);
+			this.checkBox6.TabIndex = 26;
+			this.checkBox6.Text = "Pivot Grid Collapsible";
+			// 
 			// igPivotView
 			// 
 			this.Name = "igPivotView";
-			this.Size = new System.Drawing.Size(1127, 605);
+			this.Size = new System.Drawing.Size(1127, 780);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.panel.ResumeLayout(false);
@@ -159,5 +207,8 @@
 		private CheckBox checkBox3;
 		private CheckBox checkBox2;
 		private CheckBox checkBox1;
+		private CheckBox checkBox6;
+		private CheckBox checkBox5;
+		private CheckBox checkBox4;
 	}
 }

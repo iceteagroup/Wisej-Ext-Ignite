@@ -66,9 +66,9 @@
 			// textBox1
 			// 
 			this.textBox1.Label.Text = "Value to Encode";
-			this.textBox1.Location = new System.Drawing.Point(28, 47);
+			this.textBox1.Location = new System.Drawing.Point(28, 24);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(195, 42);
+			this.textBox1.Size = new System.Drawing.Size(195, 41);
 			this.textBox1.TabIndex = 1;
 			// 
 			// comboBox1
@@ -81,9 +81,9 @@
             "byte",
             "kanji"});
 			this.comboBox1.Label.Text = "Encoding Mode";
-			this.comboBox1.Location = new System.Drawing.Point(28, 136);
+			this.comboBox1.Location = new System.Drawing.Point(28, 129);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(195, 42);
+			this.comboBox1.Size = new System.Drawing.Size(195, 41);
 			this.comboBox1.TabIndex = 2;
 			this.comboBox1.Text = "undefined";
 			// 
@@ -93,8 +93,8 @@
 			this.igQRCodeBarcode1.Data = "http://www.infragistics.com/products/jquery/";
 			this.igQRCodeBarcode1.Location = new System.Drawing.Point(115, 46);
 			this.igQRCodeBarcode1.Name = "igQRCodeBarcode1";
-			this.igQRCodeBarcode1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"data\":\"http://www.infragistics.com/products/jquery/\"}")));
 			this.igQRCodeBarcode1.Size = new System.Drawing.Size(223, 221);
+			this.igQRCodeBarcode1.TabIndex = 0;
 			// 
 			// igQRCodeBarcode
 			// 
