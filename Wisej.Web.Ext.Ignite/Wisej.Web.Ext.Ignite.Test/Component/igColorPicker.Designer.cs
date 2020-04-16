@@ -34,6 +34,10 @@
 			this.panel.SuspendLayout();
 			this.SuspendLayout();
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.TabIndex = 3;
+			// 
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
@@ -42,10 +46,20 @@
 			// 
 			this.panel.Controls.Add(this.label4);
 			this.panel.Controls.Add(this.igColorPicker1);
+			this.panel.TabIndex = 7;
+			// 
+			// linkDemo
+			// 
+			this.linkDemo.TabIndex = 6;
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://www.igniteui.com/help/api/2019.2/ui.igcolorpicker";
+			// 
+			// linkDocs
+			// 
+			this.linkDocs.TabIndex = 4;
 			// 
 			// label4
 			// 
@@ -64,7 +78,7 @@
 			this.igColorPicker1.Location = new System.Drawing.Point(126, 52);
 			this.igColorPicker1.Name = "igColorPicker1";
 			this.igColorPicker1.Size = new System.Drawing.Size(201, 159);
-			this.igColorPicker1.TabIndex = 2;
+			this.igColorPicker1.TabIndex = 0;
 			this.igColorPicker1.Text = "igColorPicker1";
 			// 
 			// igColorPicker

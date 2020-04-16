@@ -46,6 +46,7 @@
 			this.groupBox1.Controls.Add(this.comboBox2);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Size = new System.Drawing.Size(250, 428);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
@@ -55,24 +56,29 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 347);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 344);
+			this.buttonUpdate.TabIndex = 5;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igDateEditor1);
 			this.panel.Size = new System.Drawing.Size(455, 428);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/editors/date-editor";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igdateeditor";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igeditors-landingpage";
 			// 
 			// igDateEditor1
@@ -92,7 +98,7 @@
             "clear",
             "spin"});
 			this.comboBox1.Label.Text = "Button Type";
-			this.comboBox1.Location = new System.Drawing.Point(28, 24);
+			this.comboBox1.Location = new System.Drawing.Point(28, 98);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
 			this.comboBox1.TabIndex = 1;
@@ -106,7 +112,7 @@
             "atEnd",
             "browserDefault"});
 			this.comboBox2.Label.Text = "Selection on Focus";
-			this.comboBox2.Location = new System.Drawing.Point(28, 92);
+			this.comboBox2.Location = new System.Drawing.Point(28, 163);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 41);
 			this.comboBox2.TabIndex = 2;
@@ -117,7 +123,7 @@
 			this.button1.Location = new System.Drawing.Point(28, 293);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(195, 27);
-			this.button1.TabIndex = 3;
+			this.button1.TabIndex = 4;
 			this.button1.Text = "Get Selected Date";
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
@@ -129,10 +135,10 @@
             "displayModeText",
             "editModeText"});
 			this.comboBox3.Label.Text = "Data Mode";
-			this.comboBox3.Location = new System.Drawing.Point(28, 160);
+			this.comboBox3.Location = new System.Drawing.Point(28, 228);
 			this.comboBox3.Name = "comboBox3";
 			this.comboBox3.Size = new System.Drawing.Size(195, 41);
-			this.comboBox3.TabIndex = 4;
+			this.comboBox3.TabIndex = 3;
 			this.comboBox3.Text = "date";
 			// 
 			// checkBox1
@@ -142,10 +148,10 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 228);
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 22;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Revert if Not Valid";
 			// 
 			// igDateEditor

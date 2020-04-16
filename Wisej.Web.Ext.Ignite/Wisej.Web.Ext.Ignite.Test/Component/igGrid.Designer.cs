@@ -49,6 +49,7 @@
 			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Size = new System.Drawing.Size(250, 450);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
@@ -59,24 +60,29 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 369);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 366);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igGrid1);
 			this.panel.Size = new System.Drawing.Size(455, 450);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/grid/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://www.igniteui.com/help/api/2019.2/ui.iggrid";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/iggrid";
 			// 
 			// buttonLoad
@@ -84,10 +90,10 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 321);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 306);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 17;
+			this.buttonLoad.TabIndex = 5;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// checkBox1
@@ -97,10 +103,10 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 24);
+			this.checkBox1.Location = new System.Drawing.Point(28, 37);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 18;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Enable Hover Styles";
 			// 
 			// igGrid1
@@ -122,10 +128,10 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 85);
+			this.checkBox2.Location = new System.Drawing.Point(28, 93);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 19;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Alternate Row Styles";
 			// 
 			// checkBox3
@@ -135,10 +141,10 @@
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox3.Checked = true;
 			this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox3.Location = new System.Drawing.Point(28, 146);
+			this.checkBox3.Location = new System.Drawing.Point(28, 149);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 20;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Show Footer";
 			// 
 			// checkBox4
@@ -148,18 +154,18 @@
 			this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox4.Checked = true;
 			this.checkBox4.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox4.Location = new System.Drawing.Point(28, 207);
+			this.checkBox4.Location = new System.Drawing.Point(28, 205);
 			this.checkBox4.Name = "checkBox4";
 			this.checkBox4.Size = new System.Drawing.Size(195, 38);
-			this.checkBox4.TabIndex = 21;
+			this.checkBox4.TabIndex = 3;
 			this.checkBox4.Text = "Show Header";
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(28, 268);
+			this.button1.Location = new System.Drawing.Point(28, 261);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(195, 27);
-			this.button1.TabIndex = 22;
+			this.button1.TabIndex = 4;
 			this.button1.Text = "Get Row 1 Product Name";
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 

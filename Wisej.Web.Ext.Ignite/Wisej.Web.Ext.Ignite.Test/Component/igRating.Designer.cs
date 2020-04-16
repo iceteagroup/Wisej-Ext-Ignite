@@ -43,11 +43,13 @@
 			// groupBox1
 			// 
 			this.groupBox1.Controls.Add(this.numericUpDown1);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.TabIndex = 1;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -56,17 +58,21 @@
 			this.panel.Controls.Add(this.label4);
 			this.panel.Controls.Add(this.pictureBox1);
 			this.panel.Controls.Add(this.igRating1);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/rating/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igrating";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igrating-igrating";
 			// 
 			// igRating1
@@ -76,7 +82,7 @@
 			this.igRating1.Name = "igRating1";
 			this.igRating1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"value\":3}")));
 			this.igRating1.Size = new System.Drawing.Size(115, 40);
-			this.igRating1.TabIndex = 0;
+			this.igRating1.TabIndex = 1;
 			this.igRating1.Value = 3;
 			// 
 			// numericUpDown1
@@ -88,7 +94,7 @@
             0,
             131072});
 			this.numericUpDown1.Label.Text = "Set Value";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 137);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 115);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
             1,
             0,
@@ -96,7 +102,7 @@
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown1.TabIndex = 1;
+			this.numericUpDown1.TabIndex = 0;
 			this.numericUpDown1.Value = new decimal(new int[] {
             1,
             0,
@@ -119,7 +125,7 @@
 			this.label4.Location = new System.Drawing.Point(257, 35);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(171, 30);
-			this.label4.TabIndex = 2;
+			this.label4.TabIndex = 0;
 			this.label4.Text = "The Avengers";
 			// 
 			// label5
@@ -128,7 +134,7 @@
 			this.label5.Location = new System.Drawing.Point(257, 117);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(171, 160);
-			this.label5.TabIndex = 3;
+			this.label5.TabIndex = 2;
 			this.label5.Text = "Earth\'s mightiest heroes must come together and learn to fight as a team if they " +
     "are going to stop the mischievous Loki and his alien army from enslaving humanit" +
     "y.";

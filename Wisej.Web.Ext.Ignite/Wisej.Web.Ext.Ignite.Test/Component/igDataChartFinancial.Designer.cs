@@ -47,6 +47,7 @@
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonExportImage);
 			this.groupBox1.Size = new System.Drawing.Size(250, 444);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonExportImage, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
@@ -56,24 +57,29 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 363);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 361);
+			this.buttonUpdate.TabIndex = 5;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igDataChart1);
 			this.panel.Size = new System.Drawing.Size(502, 444);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/data-chart/charts-financial-indicators";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igDataChart";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igdatachart-landing-page";
 			// 
 			// igDataChart1
@@ -93,20 +99,20 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 302);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 279);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 17;
+			this.buttonLoad.TabIndex = 3;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// buttonExportImage
 			// 
 			this.buttonExportImage.Display = Wisej.Web.Display.Icon;
 			this.buttonExportImage.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-image.svg";
-			this.buttonExportImage.Location = new System.Drawing.Point(76, 302);
+			this.buttonExportImage.Location = new System.Drawing.Point(76, 279);
 			this.buttonExportImage.Name = "buttonExportImage";
 			this.buttonExportImage.Size = new System.Drawing.Size(42, 42);
-			this.buttonExportImage.TabIndex = 16;
+			this.buttonExportImage.TabIndex = 4;
 			this.buttonExportImage.Click += new System.EventHandler(this.buttonExportImage_Click);
 			// 
 			// comboBox1
@@ -116,10 +122,10 @@
             "dragZoom",
             "dragPan"});
 			this.comboBox1.Label.Text = "Default Interaction";
-			this.comboBox1.Location = new System.Drawing.Point(28, 24);
+			this.comboBox1.Location = new System.Drawing.Point(28, 36);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 18;
+			this.comboBox1.TabIndex = 0;
 			this.comboBox1.Text = "dragZoom";
 			// 
 			// comboBox2
@@ -130,10 +136,10 @@
             "control",
             "shift"});
 			this.comboBox2.Label.Text = "Drag Modifier";
-			this.comboBox2.Location = new System.Drawing.Point(28, 122);
+			this.comboBox2.Location = new System.Drawing.Point(28, 117);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 41);
-			this.comboBox2.TabIndex = 19;
+			this.comboBox2.TabIndex = 1;
 			this.comboBox2.Text = "none";
 			// 
 			// comboBox3
@@ -143,10 +149,10 @@
             "beforeSeries",
             "behindSeries"});
 			this.comboBox3.Label.Text = "Grid Mode";
-			this.comboBox3.Location = new System.Drawing.Point(28, 220);
+			this.comboBox3.Location = new System.Drawing.Point(28, 198);
 			this.comboBox3.Name = "comboBox3";
 			this.comboBox3.Size = new System.Drawing.Size(195, 41);
-			this.comboBox3.TabIndex = 20;
+			this.comboBox3.TabIndex = 2;
 			this.comboBox3.Text = "behindSeries";
 			// 
 			// igDataChartFinancial

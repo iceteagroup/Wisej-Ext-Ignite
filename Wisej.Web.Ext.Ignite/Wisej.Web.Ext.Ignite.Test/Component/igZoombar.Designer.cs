@@ -47,6 +47,7 @@
 			this.groupBox1.Controls.Add(this.numericUpDown2);
 			this.groupBox1.Controls.Add(this.numericUpDown1);
 			this.groupBox1.Size = new System.Drawing.Size(250, 387);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
@@ -54,7 +55,8 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 306);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 304);
+			this.buttonUpdate.TabIndex = 3;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
@@ -62,17 +64,21 @@
 			this.panel.Controls.Add(this.panel1);
 			this.panel.Controls.Add(this.igDataChart1);
 			this.panel.Size = new System.Drawing.Size(547, 387);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/zoombar/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igzoombar";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://www.igniteui.com/help/igzoombar-landingpage";
 			// 
 			// igDataChart1
@@ -84,7 +90,7 @@
 			this.igDataChart1.Name = "igDataChart1";
 			this.igDataChart1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igDataChart1.Options"))));
 			this.igDataChart1.Size = new System.Drawing.Size(475, 263);
-			this.igDataChart1.TabIndex = 1;
+			this.igDataChart1.TabIndex = 0;
 			this.igDataChart1.Text = "igDataChart1";
 			this.igDataChart1.WidgetTemplates = new Wisej.Web.Ext.Ignite.igBase.WidgetTemplate[0];
 			this.igDataChart1.Initialized += new System.EventHandler(this.igDataChart1_Initialized);
@@ -96,15 +102,15 @@
 			this.panel1.Location = new System.Drawing.Point(35, 300);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(476, 57);
-			this.panel1.TabIndex = 2;
+			this.panel1.TabIndex = 1;
 			// 
 			// numericUpDown1
 			// 
 			this.numericUpDown1.Label.Text = "Zoom Window Move Distance";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 24);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 37);
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown1.TabIndex = 1;
+			this.numericUpDown1.TabIndex = 0;
 			this.numericUpDown1.Value = new decimal(new int[] {
             10,
             0,
@@ -117,7 +123,7 @@
 			this.numericUpDown2.Location = new System.Drawing.Point(28, 126);
 			this.numericUpDown2.Name = "numericUpDown2";
 			this.numericUpDown2.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown2.TabIndex = 2;
+			this.numericUpDown2.TabIndex = 1;
 			this.numericUpDown2.Value = new decimal(new int[] {
             5,
             0,
@@ -127,7 +133,7 @@
 			// numericUpDown3
 			// 
 			this.numericUpDown3.Label.Text = "Window Pan Duration";
-			this.numericUpDown3.Location = new System.Drawing.Point(28, 228);
+			this.numericUpDown3.Location = new System.Drawing.Point(28, 215);
 			this.numericUpDown3.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -135,7 +141,7 @@
             0});
 			this.numericUpDown3.Name = "numericUpDown3";
 			this.numericUpDown3.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown3.TabIndex = 3;
+			this.numericUpDown3.TabIndex = 2;
 			this.numericUpDown3.Value = new decimal(new int[] {
             500,
             0,

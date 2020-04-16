@@ -53,6 +53,7 @@
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonSave);
 			this.groupBox1.Size = new System.Drawing.Size(250, 535);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
@@ -65,25 +66,30 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 445);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 442);
 			this.buttonUpdate.Size = new System.Drawing.Size(194, 52);
+			this.buttonUpdate.TabIndex = 8;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igSpreadsheet1);
 			this.panel.Size = new System.Drawing.Size(455, 535);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/spreadsheet/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://www.igniteui.com/help/api/2019.2/ui.igSpreadsheet";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igspreadsheet-overview";
 			// 
 			// buttonLoad
@@ -91,29 +97,29 @@
 			this.buttonLoad.AllowedFileTypes = ".xlsx";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 397);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 382);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 11;
+			this.buttonLoad.TabIndex = 6;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// buttonSave
 			// 
 			this.buttonSave.Display = Wisej.Web.Display.Icon;
 			this.buttonSave.ImageSource = "icon-save";
-			this.buttonSave.Location = new System.Drawing.Point(76, 397);
+			this.buttonSave.Location = new System.Drawing.Point(76, 382);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 10;
+			this.buttonSave.TabIndex = 7;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// textBox1
 			// 
 			this.textBox1.Label.Text = "Active Cell";
-			this.textBox1.Location = new System.Drawing.Point(28, 209);
+			this.textBox1.Location = new System.Drawing.Point(28, 205);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(194, 41);
-			this.textBox1.TabIndex = 12;
+			this.textBox1.TabIndex = 3;
 			this.textBox1.Text = "A1";
 			// 
 			// checkBox1
@@ -123,16 +129,16 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 23);
+			this.checkBox1.Location = new System.Drawing.Point(28, 37);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(194, 38);
-			this.checkBox1.TabIndex = 13;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Formula Bar Visible";
 			// 
 			// numericUpDown1
 			// 
 			this.numericUpDown1.Label.Text = "Zoom Level";
-			this.numericUpDown1.Location = new System.Drawing.Point(28, 274);
+			this.numericUpDown1.Location = new System.Drawing.Point(28, 323);
 			this.numericUpDown1.Maximum = new decimal(new int[] {
             200,
             0,
@@ -140,7 +146,7 @@
             0});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(194, 41);
-			this.numericUpDown1.TabIndex = 14;
+			this.numericUpDown1.TabIndex = 5;
 			this.numericUpDown1.Value = new decimal(new int[] {
             100,
             0,
@@ -156,10 +162,10 @@
             "up",
             "left"});
 			this.comboBox1.Label.Text = "Enter Key Navigation Direction";
-			this.comboBox1.Location = new System.Drawing.Point(28, 339);
+			this.comboBox1.Location = new System.Drawing.Point(28, 264);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(194, 41);
-			this.comboBox1.TabIndex = 15;
+			this.comboBox1.TabIndex = 4;
 			this.comboBox1.Text = "down";
 			// 
 			// igSpreadsheet1
@@ -182,10 +188,10 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 85);
+			this.checkBox2.Location = new System.Drawing.Point(28, 93);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(194, 38);
-			this.checkBox2.TabIndex = 16;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Allow Add Worksheet";
 			// 
 			// checkBox3
@@ -195,10 +201,10 @@
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox3.Checked = true;
 			this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox3.Location = new System.Drawing.Point(28, 147);
+			this.checkBox3.Location = new System.Drawing.Point(28, 149);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(194, 38);
-			this.checkBox3.TabIndex = 17;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Gridlines Visible";
 			// 
 			// igSpreadsheet

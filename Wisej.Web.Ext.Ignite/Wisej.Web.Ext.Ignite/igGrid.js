@@ -19,6 +19,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+this.initWidget = function () {
+
+    this.getContentElement().setStyle("overflow-y", "visible");
+    this.resizeWidget();
+};
+
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 

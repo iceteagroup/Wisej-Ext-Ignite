@@ -49,6 +49,7 @@
 			this.groupBox1.Controls.Add(this.buttonLoad);
 			this.groupBox1.Controls.Add(this.buttonSave);
 			this.groupBox1.Size = new System.Drawing.Size(250, 487);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonLoad, 0);
@@ -59,24 +60,29 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 406);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 403);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igSparkline1);
 			this.panel.Size = new System.Drawing.Size(565, 487);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/sparkline/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "https://www.igniteui.com/help/api/2019.2/ui.igsparkline";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igsparkline-landing";
 			// 
 			// igSparkline1
@@ -98,28 +104,28 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 348);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 326);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 15;
+			this.buttonLoad.TabIndex = 4;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// buttonSave
 			// 
 			this.buttonSave.Display = Wisej.Web.Display.Icon;
 			this.buttonSave.ImageSource = "icon-save";
-			this.buttonSave.Location = new System.Drawing.Point(76, 348);
+			this.buttonSave.Location = new System.Drawing.Point(76, 326);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 14;
+			this.buttonSave.TabIndex = 5;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(28, 24);
+			this.button1.Location = new System.Drawing.Point(28, 264);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(195, 27);
-			this.button1.TabIndex = 16;
+			this.button1.TabIndex = 3;
 			this.button1.Text = "Add Random Item";
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
@@ -131,10 +137,10 @@
             "column",
             "winLoss"});
 			this.comboBox1.Label.Text = "Display Type";
-			this.comboBox1.Location = new System.Drawing.Point(28, 99);
+			this.comboBox1.Location = new System.Drawing.Point(28, 112);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 17;
+			this.comboBox1.TabIndex = 1;
 			this.comboBox1.Text = "line";
 			// 
 			// numericUpDown1
@@ -148,7 +154,7 @@
             -2147483648});
 			this.numericUpDown1.Name = "numericUpDown1";
 			this.numericUpDown1.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown1.TabIndex = 18;
+			this.numericUpDown1.TabIndex = 2;
 			this.numericUpDown1.Value = new decimal(new int[] {
             1,
             0,
@@ -174,10 +180,10 @@
             "cumulativeAverage",
             "weightedAverage"});
 			this.comboBox2.Label.Text = "Trend Line Type";
-			this.comboBox2.Location = new System.Drawing.Point(28, 277);
+			this.comboBox2.Location = new System.Drawing.Point(28, 36);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 41);
-			this.comboBox2.TabIndex = 19;
+			this.comboBox2.TabIndex = 0;
 			this.comboBox2.Text = "none";
 			// 
 			// igSparkline

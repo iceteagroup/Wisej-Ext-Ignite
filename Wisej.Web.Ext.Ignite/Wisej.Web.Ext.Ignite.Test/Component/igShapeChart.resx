@@ -120,7 +120,7 @@
   <data name="igShapeChart1.Options" xml:space="preserve">
     <value>{"transitionDuration":250,"xAxisInterval":20,"yAxisInterval":20,"xAxisMinimumValue":0,"yAxisMinimumValue":0,"xAxisMaximumValue":100,"yAxisMaximumValue":100,"xAxisTickLength":5,"yAxisTickLength":5,"xAxisTickStrokeThickness":1,"yAxisTickStrokeThickness":1,"xAxisTickStroke":"gray","yAxisTickStroke":"gray","thickness":2,"markerTypes":["circle"],"isHorizontalZoomEnabled":true,"isVerticalZoomEnabled":true,"chartType":"point","title":"point","dataSource":[{"X":20,"Y":20,"R":10,"Value":10},{"X":20,"Y":80,"R":30,"Value":10},{"X":80,"Y":80,"R":30,"Value":90},{"X":80,"Y":20,"R":10,"Value":90}]}</value>
   </data>
-  <data name="widgetFunction3.Source" xml:space="preserve">
+  <data name="widgetFunction1.Source" xml:space="preserve">
     <value>
 
 function GetDensityData(x, y) {
@@ -158,7 +158,7 @@ function GetDensityData(x, y) {
         var highDensityData = GetDensityData(20,20);
         this.widget.option("dataSource", highDensityData);</value>
   </data>
-  <data name="widgetFunction4.Source" xml:space="preserve">
+  <data name="widgetFunction2.Source" xml:space="preserve">
     <value>function GetRectPoints(x, y) {
             return [
                 { "x": x, "y": y },
@@ -186,7 +186,7 @@ this.widget.option("dataSource", shapeData);</value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EHAQAAAAABAAAAAQAAAAQU
         U3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAABf3///8UU3lzdGVtLkRyYXdpbmcuUG9pbnQCAAAAAXgBeQAA
-        CAgCAAAAAAAAAMgAAAAL
+        CAgCAAAAAAAAANQAAAAL
 </value>
   </metadata>
 </root>

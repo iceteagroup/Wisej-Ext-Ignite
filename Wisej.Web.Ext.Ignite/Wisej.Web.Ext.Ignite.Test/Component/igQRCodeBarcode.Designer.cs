@@ -39,34 +39,41 @@
 			// 
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.textBox1);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.textBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
 			// 
 			// buttonUpdate
 			// 
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 233);
+			this.buttonUpdate.TabIndex = 2;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igQRCodeBarcode1);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/barcode/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igQrCodeBarcode";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "https://www.igniteui.com/help/igqrcodebarcode-overview";
 			// 
 			// textBox1
 			// 
 			this.textBox1.Label.Text = "Value to Encode";
-			this.textBox1.Location = new System.Drawing.Point(28, 24);
+			this.textBox1.Location = new System.Drawing.Point(28, 135);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(195, 41);
 			this.textBox1.TabIndex = 1;
@@ -81,10 +88,10 @@
             "byte",
             "kanji"});
 			this.comboBox1.Label.Text = "Encoding Mode";
-			this.comboBox1.Location = new System.Drawing.Point(28, 129);
+			this.comboBox1.Location = new System.Drawing.Point(28, 37);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 2;
+			this.comboBox1.TabIndex = 0;
 			this.comboBox1.Text = "undefined";
 			// 
 			// igQRCodeBarcode1

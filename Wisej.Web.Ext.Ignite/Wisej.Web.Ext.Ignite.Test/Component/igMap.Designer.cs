@@ -47,29 +47,35 @@
 			// groupBox1
 			// 
 			this.groupBox1.Controls.Add(this.groupBox2);
-			this.groupBox1.Size = new System.Drawing.Size(250, 466);
+			this.groupBox1.Size = new System.Drawing.Size(250, 521);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.groupBox2, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 385);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 440);
+			this.buttonUpdate.TabIndex = 1;
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igMap1);
-			this.panel.Size = new System.Drawing.Size(455, 466);
+			this.panel.Size = new System.Drawing.Size(455, 521);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/map/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igmap";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igmap-landing-page";
 			// 
 			// igMap1
@@ -80,7 +86,7 @@
 			this.igMap1.Location = new System.Drawing.Point(21, 21);
 			this.igMap1.Name = "igMap1";
 			this.igMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse(resources.GetString("igMap1.Options"))));
-			this.igMap1.Size = new System.Drawing.Size(410, 422);
+			this.igMap1.Size = new System.Drawing.Size(410, 477);
 			this.igMap1.TabIndex = 0;
 			this.igMap1.Text = "igMap1";
 			widgetTemplate1.Id = "tooltipTemplate";
@@ -96,10 +102,10 @@
 			this.groupBox2.Controls.Add(this.numericUpDown2);
 			this.groupBox2.Controls.Add(this.numericUpDown1);
 			this.groupBox2.Controls.Add(this.textBox1);
-			this.groupBox2.Location = new System.Drawing.Point(25, 24);
+			this.groupBox2.Location = new System.Drawing.Point(23, 37);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(200, 342);
-			this.groupBox2.TabIndex = 1;
+			this.groupBox2.TabIndex = 0;
 			this.groupBox2.Text = "Add a Marker";
 			// 
 			// textBox2
@@ -108,7 +114,7 @@
 			this.textBox2.Location = new System.Drawing.Point(6, 93);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(188, 41);
-			this.textBox2.TabIndex = 5;
+			this.textBox2.TabIndex = 1;
 			// 
 			// button1
 			// 
@@ -148,7 +154,7 @@
 			// igMap
 			// 
 			this.Name = "igMap";
-			this.Size = new System.Drawing.Size(864, 656);
+			this.Size = new System.Drawing.Size(864, 711);
 			this.groupBox1.ResumeLayout(false);
 			this.panel.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);

@@ -19,6 +19,28 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+this.resizeWidget = function () {
+
+	if (this.widget) {
+		var bounds = this.getBounds();
+		if (bounds) {
+			try {
+				this.widget.option({
+					width: bounds.width - 2,
+					height: bounds.height - 2
+				});
+			} catch (ex) { }
+
+			if (typeof (this.widget.redraw) === "function") {
+				this.widget.redraw();
+			}
+			else if (typeof (this.widget.refresh) === "function") {
+				this.widget.refresh();
+			}
+		}
+	}
+}
+
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 

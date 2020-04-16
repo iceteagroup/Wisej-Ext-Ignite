@@ -50,6 +50,7 @@
 			this.groupBox1.Controls.Add(this.buttonSave);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Size = new System.Drawing.Size(250, 464);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.buttonSave, 0);
@@ -61,33 +62,38 @@
 			// buttonUpdate
 			// 
 			this.buttonUpdate.Location = new System.Drawing.Point(28, 383);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igCategoryChart1);
 			this.panel.Size = new System.Drawing.Size(537, 464);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/category-chart/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igcategorychart";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igcategorychart-landingpage";
 			// 
 			// comboBox1
 			// 
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBox1.Label.Text = "Chart Type";
-			this.comboBox1.Location = new System.Drawing.Point(28, 24);
+			this.comboBox1.Location = new System.Drawing.Point(28, 240);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 1;
+			this.comboBox1.TabIndex = 3;
 			// 
 			// igCategoryChart1
 			// 
@@ -110,20 +116,20 @@
 			this.buttonLoad.AllowedFileTypes = ".json";
 			this.buttonLoad.HideValue = true;
 			this.buttonLoad.ImageSource = "icon-file";
-			this.buttonLoad.Location = new System.Drawing.Point(28, 319);
+			this.buttonLoad.Location = new System.Drawing.Point(28, 311);
 			this.buttonLoad.Name = "buttonLoad";
 			this.buttonLoad.Size = new System.Drawing.Size(42, 42);
-			this.buttonLoad.TabIndex = 13;
+			this.buttonLoad.TabIndex = 4;
 			this.buttonLoad.Uploaded += new Wisej.Web.UploadedEventHandler(this.buttonLoad_Uploaded);
 			// 
 			// buttonSave
 			// 
 			this.buttonSave.Display = Wisej.Web.Display.Icon;
 			this.buttonSave.ImageSource = "icon-save";
-			this.buttonSave.Location = new System.Drawing.Point(76, 319);
+			this.buttonSave.Location = new System.Drawing.Point(76, 311);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(42, 42);
-			this.buttonSave.TabIndex = 12;
+			this.buttonSave.TabIndex = 5;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
 			// 
 			// checkBox1
@@ -133,10 +139,10 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 101);
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 28;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Align Gridlines to Pixels";
 			// 
 			// checkBox2
@@ -144,10 +150,10 @@
 			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Location = new System.Drawing.Point(28, 175);
+			this.checkBox2.Location = new System.Drawing.Point(28, 104);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 29;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Final Value Annotations";
 			// 
 			// checkBox3
@@ -155,10 +161,10 @@
 			this.checkBox3.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox3.AutoSize = false;
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox3.Location = new System.Drawing.Point(28, 249);
+			this.checkBox3.Location = new System.Drawing.Point(28, 172);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 30;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Item Highlighting";
 			// 
 			// igCategoryChart

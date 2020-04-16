@@ -52,6 +52,7 @@
 			this.groupBox1.Controls.Add(this.comboBox2);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Size = new System.Drawing.Size(250, 518);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
@@ -63,24 +64,29 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 437);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 433);
+			this.buttonUpdate.TabIndex = 7;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igFinancialChart1);
 			this.panel.Size = new System.Drawing.Size(455, 518);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/financial-chart/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igfinancialchart";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/financial-chart-overview";
 			// 
 			// igFinancialChart1
@@ -108,10 +114,10 @@
             "column",
             "line"});
 			this.comboBox1.Label.Text = "Chart Type";
-			this.comboBox1.Location = new System.Drawing.Point(28, 24);
+			this.comboBox1.Location = new System.Drawing.Point(28, 213);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 1;
+			this.comboBox1.TabIndex = 3;
 			// 
 			// comboBox2
 			// 
@@ -131,26 +137,26 @@
             "cumulativeAverage",
             "weightedAverage"});
 			this.comboBox2.Label.Text = "Trend Line Type";
-			this.comboBox2.Location = new System.Drawing.Point(28, 88);
+			this.comboBox2.Location = new System.Drawing.Point(28, 275);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 41);
-			this.comboBox2.TabIndex = 2;
+			this.comboBox2.TabIndex = 4;
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(28, 152);
+			this.button1.Location = new System.Drawing.Point(28, 337);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(195, 27);
-			this.button1.TabIndex = 3;
+			this.button1.TabIndex = 5;
 			this.button1.Text = "Add new Item";
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(28, 202);
+			this.button2.Location = new System.Drawing.Point(28, 385);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(195, 27);
-			this.button2.TabIndex = 4;
+			this.button2.TabIndex = 6;
 			this.button2.Text = "Start Task";
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
@@ -159,10 +165,10 @@
 			this.checkBox1.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox1.AutoSize = false;
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox1.Location = new System.Drawing.Point(28, 252);
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 23;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Animate Series When Axis Range Changes";
 			// 
 			// checkBox2
@@ -170,10 +176,10 @@
 			this.checkBox2.Appearance = Wisej.Web.Appearance.Switch;
 			this.checkBox2.AutoSize = false;
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.checkBox2.Location = new System.Drawing.Point(28, 313);
+			this.checkBox2.Location = new System.Drawing.Point(28, 95);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 24;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Crosshairs Snap to Data";
 			// 
 			// checkBox3
@@ -183,10 +189,10 @@
 			this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox3.Checked = true;
 			this.checkBox3.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox3.Location = new System.Drawing.Point(28, 374);
+			this.checkBox3.Location = new System.Drawing.Point(28, 154);
 			this.checkBox3.Name = "checkBox3";
 			this.checkBox3.Size = new System.Drawing.Size(195, 38);
-			this.checkBox3.TabIndex = 25;
+			this.checkBox3.TabIndex = 2;
 			this.checkBox3.Text = "Toolbar Visible";
 			// 
 			// igFinancialChart

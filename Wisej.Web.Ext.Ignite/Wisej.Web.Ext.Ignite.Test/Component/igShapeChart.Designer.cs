@@ -29,8 +29,8 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igShapeChart));
-			Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction3 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
-			Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction4 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+			Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction1 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
+			Wisej.Web.Ext.Ignite.igBase.WidgetFunction widgetFunction2 = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction();
 			this.igShapeChart1 = new Wisej.Web.Ext.Ignite.igShapeChart();
 			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.comboBox2 = new Wisej.Web.ComboBox();
@@ -47,6 +47,7 @@
 			this.groupBox1.Controls.Add(this.comboBox2);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Size = new System.Drawing.Size(250, 421);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
@@ -55,24 +56,29 @@
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 340);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 338);
+			this.buttonUpdate.TabIndex = 4;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igShapeChart1);
 			this.panel.Size = new System.Drawing.Size(455, 421);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/shape-chart/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igSparkline";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igsparkline-landing";
 			// 
 			// igShapeChart1
@@ -86,13 +92,13 @@
 			this.igShapeChart1.Size = new System.Drawing.Size(391, 379);
 			this.igShapeChart1.TabIndex = 0;
 			this.igShapeChart1.Text = "igShapeChart1";
-			widgetFunction3.Name = "SetDensityData";
-			widgetFunction3.Source = resources.GetString("widgetFunction3.Source");
-			widgetFunction4.Name = "SetShapeData";
-			widgetFunction4.Source = resources.GetString("widgetFunction4.Source");
+			widgetFunction1.Name = "SetDensityData";
+			widgetFunction1.Source = resources.GetString("widgetFunction1.Source");
+			widgetFunction2.Name = "SetShapeData";
+			widgetFunction2.Source = resources.GetString("widgetFunction2.Source");
 			this.igShapeChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
-        widgetFunction3,
-        widgetFunction4};
+        widgetFunction1,
+        widgetFunction2};
 			// 
 			// comboBox1
 			// 
@@ -108,10 +114,10 @@
             "polygon",
             "polyline"});
 			this.comboBox1.Label.Text = "Chart Type";
-			this.comboBox1.Location = new System.Drawing.Point(28, 24);
+			this.comboBox1.Location = new System.Drawing.Point(28, 184);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 1;
+			this.comboBox1.TabIndex = 2;
 			this.comboBox1.Text = "point";
 			// 
 			// comboBox2
@@ -123,10 +129,10 @@
             "vertical",
             "both"});
 			this.comboBox2.Label.Text = "Crosshairs Display Mode";
-			this.comboBox2.Location = new System.Drawing.Point(28, 106);
+			this.comboBox2.Location = new System.Drawing.Point(28, 261);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 41);
-			this.comboBox2.TabIndex = 2;
+			this.comboBox2.TabIndex = 3;
 			// 
 			// checkBox1
 			// 
@@ -135,10 +141,10 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 188);
+			this.checkBox1.Location = new System.Drawing.Point(28, 36);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 26;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Horizontal Zoom";
 			// 
 			// checkBox2
@@ -148,10 +154,10 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(28, 267);
+			this.checkBox2.Location = new System.Drawing.Point(28, 110);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 27;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Vertical Zoom";
 			// 
 			// igShapeChart

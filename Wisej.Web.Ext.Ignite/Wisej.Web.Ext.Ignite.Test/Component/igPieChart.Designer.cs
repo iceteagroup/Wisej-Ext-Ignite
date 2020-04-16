@@ -56,34 +56,40 @@
 			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.groupBox2);
 			this.groupBox1.Size = new System.Drawing.Size(250, 624);
-			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
+			this.groupBox1.TabIndex = 3;
 			this.groupBox1.Controls.SetChildIndex(this.groupBox2, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.checkBox2, 0);
 			this.groupBox1.Controls.SetChildIndex(this.numericUpDown2, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox1, 0);
 			this.groupBox1.Controls.SetChildIndex(this.comboBox2, 0);
+			this.groupBox1.Controls.SetChildIndex(this.buttonUpdate, 0);
 			// 
 			// buttonUpdate
 			// 
-			this.buttonUpdate.Location = new System.Drawing.Point(28, 543);
+			this.buttonUpdate.Location = new System.Drawing.Point(28, 539);
+			this.buttonUpdate.TabIndex = 6;
 			this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
 			// 
 			// panel
 			// 
 			this.panel.Controls.Add(this.igPieChart1);
 			this.panel.Size = new System.Drawing.Size(455, 624);
+			this.panel.TabIndex = 7;
 			// 
 			// linkDemo
 			// 
+			this.linkDemo.TabIndex = 6;
 			this.linkDemo.Text = "https://www.igniteui.com/pie-chart/overview";
 			// 
 			// linkAPI
 			// 
+			this.linkAPI.TabIndex = 5;
 			this.linkAPI.Text = "http://www.igniteui.com/help/api/2019.2/ui.igPieChart";
 			// 
 			// linkDocs
 			// 
+			this.linkDocs.TabIndex = 4;
 			this.linkDocs.Text = "http://www.igniteui.com/help/igpiechart";
 			// 
 			// igPieChart1
@@ -107,10 +113,10 @@
 			this.groupBox2.Controls.Add(this.button1);
 			this.groupBox2.Controls.Add(this.numericUpDown1);
 			this.groupBox2.Controls.Add(this.textBox1);
-			this.groupBox2.Location = new System.Drawing.Point(28, 24);
+			this.groupBox2.Location = new System.Drawing.Point(28, 337);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(195, 182);
-			this.groupBox2.TabIndex = 1;
+			this.groupBox2.TabIndex = 5;
 			this.groupBox2.Text = "Add Item";
 			// 
 			// button1
@@ -145,10 +151,10 @@
 			this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox2.Checked = true;
 			this.checkBox2.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox2.Location = new System.Drawing.Point(27, 286);
+			this.checkBox2.Location = new System.Drawing.Point(27, 96);
 			this.checkBox2.Name = "checkBox2";
 			this.checkBox2.Size = new System.Drawing.Size(195, 38);
-			this.checkBox2.TabIndex = 26;
+			this.checkBox2.TabIndex = 1;
 			this.checkBox2.Text = "Allow Slice Selection";
 			// 
 			// checkBox1
@@ -158,10 +164,10 @@
 			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.checkBox1.Checked = true;
 			this.checkBox1.CheckState = Wisej.Web.CheckState.Checked;
-			this.checkBox1.Location = new System.Drawing.Point(28, 227);
+			this.checkBox1.Location = new System.Drawing.Point(27, 38);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(195, 38);
-			this.checkBox1.TabIndex = 25;
+			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "Allow Slice Explosion";
 			// 
 			// numericUpDown2
@@ -173,7 +179,7 @@
             0,
             131072});
 			this.numericUpDown2.Label.Text = "Exploded Radius";
-			this.numericUpDown2.Location = new System.Drawing.Point(28, 345);
+			this.numericUpDown2.Location = new System.Drawing.Point(28, 154);
 			this.numericUpDown2.Maximum = new decimal(new int[] {
             1,
             0,
@@ -181,7 +187,7 @@
             0});
 			this.numericUpDown2.Name = "numericUpDown2";
 			this.numericUpDown2.Size = new System.Drawing.Size(195, 41);
-			this.numericUpDown2.TabIndex = 27;
+			this.numericUpDown2.TabIndex = 2;
 			this.numericUpDown2.Value = new decimal(new int[] {
             2,
             0,
@@ -196,10 +202,10 @@
             "multiple",
             "manual"});
 			this.comboBox1.Label.Text = "Selection Mode";
-			this.comboBox1.Location = new System.Drawing.Point(28, 407);
+			this.comboBox1.Location = new System.Drawing.Point(28, 215);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(195, 41);
-			this.comboBox1.TabIndex = 28;
+			this.comboBox1.TabIndex = 3;
 			this.comboBox1.Text = "single";
 			// 
 			// comboBox2
@@ -209,10 +215,10 @@
             "counterclockwise",
             "clockwise"});
 			this.comboBox2.Label.Text = "Sweep Direction";
-			this.comboBox2.Location = new System.Drawing.Point(27, 469);
+			this.comboBox2.Location = new System.Drawing.Point(27, 276);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(195, 41);
-			this.comboBox2.TabIndex = 29;
+			this.comboBox2.TabIndex = 4;
 			this.comboBox2.Text = "clockwise";
 			// 
 			// igPieChart

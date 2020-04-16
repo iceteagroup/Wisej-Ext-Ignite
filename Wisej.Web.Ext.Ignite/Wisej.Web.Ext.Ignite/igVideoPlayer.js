@@ -1,4 +1,4 @@
-﻿//# sourceURL=wisej.web.ext.IgniteWidget.igBulletGraph.js
+﻿//# sourceURL=wisej.web.ext.IgniteWidget.igVideoPlayer.js
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -19,17 +19,40 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+this.initWidget = function () {
+
+	this.container.style.overflow = "visible";
+};
+
+/**
+ * Resizes the hosted widget to always fit our container.
+ */
+this.resizeWidget = function () {
+
+	if (this.widget) {
+		var bounds = this.getBounds();
+		if (bounds) {
+			try {
+				this.widget.option({
+					width: bounds.width,
+					height: bounds.height - 4
+				});
+			} catch (ex) { }
+		}
+	}
+}
+
 // Returns a data map that can be converted to JSON.
 this.filterEventData = function (args) {
 
-    switch (args.type) {
-        case "playing":
-        case "paused":
-            return {
-                currentTime: args.currentTime,
-                duration: args.duration,
-                source: args.source
-            };
-            break;
-    }
+	switch (args.type) {
+		case "playing":
+		case "paused":
+			return {
+				currentTime: args.currentTime,
+				duration: args.duration,
+				source: args.source
+			};
+			break;
+	}
 };
