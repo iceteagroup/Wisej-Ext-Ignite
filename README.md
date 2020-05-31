@@ -129,7 +129,7 @@ The events registered by the ig class (see constructor for each component in the
 this.igRadialGauge1.Widget.valueChanged += new WidgetEventHandler(igRadialGauge1_WidgetEvent);
 
 ' VB.NET
-Me.IgRadialGauge1.Widget.valueChanged = New WidgetEventHandler(AddressOf Me.IgRadialGauge1_CellClick)
+Me.IgRadialGauge1.Widget.valueChanged = New WidgetEventHandler(AddressOf Me.IgRadialGauge1_WidgetEvent)
 ~~~
 
 **Note:** Unfortunately in VB.NET you cannot use *AddHandler* or *Handles* to handle dynamic events. You can attach only a single handle using the syntax above, or attach to the existing *WidgetEvent* event and check the *e.Type* property.
