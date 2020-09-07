@@ -12,7 +12,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igRadialGauge1.Widget.valueChanged += new WidgetEventHandler(igRadialGauge_WidgetEvent);
+			this.igRadialGauge1.Instance.valueChanged += new WidgetEventHandler(igRadialGauge_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
@@ -54,14 +54,14 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private async void button1_Click(object sender, EventArgs e)
 		{
-			var res = await this.igRadialGauge1.Widget.getRangeNamesAsync();
+			var res = await this.igRadialGauge1.Instance.getRangeNamesAsync();
 
 			AlertBox.Show(res);
 		}
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			this.igRadialGauge1.Widget.addRange(new
+			this.igRadialGauge1.Instance.addRange(new
 			{
 				name = "MyRange",
 				brush = "green",

@@ -38,7 +38,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igPivotGrid(object options) : base("igPivotGrid", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"dataSourceInitialized",
 			"dataSourceUpdated",
 			"drag",

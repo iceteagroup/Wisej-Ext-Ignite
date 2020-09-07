@@ -8,15 +8,15 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igTreeGrid1.Widget.cellClick += new WidgetEventHandler(igTree_WidgetEvent);
-			this.igTreeGrid1.Widget.cellRightClick += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTreeGrid1.Instance.cellClick += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTreeGrid1.Instance.cellRightClick += new WidgetEventHandler(igTree_WidgetEvent);
 		}
 
 		private void buttonLoad_Uploaded(object sender, UploadedEventArgs e)
 		{
 			var data = JSON.Parse(e.Files[0].InputStream);
 
-			this.igTreeGrid1.Widget.dataSourceObject(data);
+			this.igTreeGrid1.Instance.dataSourceObject(data);
 		}
 
 		private void buttonExport_Click(object sender, EventArgs e)

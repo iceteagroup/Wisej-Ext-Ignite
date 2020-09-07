@@ -46,7 +46,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igSpreadsheet(object options) : base("igSpreadsheet", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"export",
 			"actionExecuted",
 			"actionExecuting",

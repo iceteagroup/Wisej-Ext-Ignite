@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igDoughnutChart(object options) : base("igDoughnutChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"browserNotSupported",
 			"dataBinding",
 			"dataBound",

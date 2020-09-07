@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igPieChart1.Widget.sliceClick += new WidgetEventHandler(igPieChart_WidgetEvent);
-			this.igPieChart1.Widget.labelClick += new WidgetEventHandler(igPieChart_WidgetEvent);
+			this.igPieChart1.Instance.sliceClick += new WidgetEventHandler(igPieChart_WidgetEvent);
+			this.igPieChart1.Instance.labelClick += new WidgetEventHandler(igPieChart_WidgetEvent);
 		}
 
 		private void igPieChart_WidgetEvent(object sender, WidgetEventArgs e)
@@ -26,7 +26,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 
 			// Doesn't work because Names are in quotes
-			this.igPieChart1.Widget.addItem(new {
+			this.igPieChart1.Instance.addItem(new {
 				Label = this.textBox1.Text,
 				Budget = this.numericUpDown1.Value
 			});

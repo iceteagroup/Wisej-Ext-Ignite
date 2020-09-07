@@ -43,7 +43,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igScheduler(object options) : base("igScheduler", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"agendaRangeChanged",
 			"agendaRangeChanging",
 			"appointmentCreated",

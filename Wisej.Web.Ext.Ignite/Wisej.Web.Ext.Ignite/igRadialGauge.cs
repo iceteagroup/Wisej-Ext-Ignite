@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igRadialGauge(object options) : base("igRadialGauge", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"alignLabel",
 				"formatLabel",
 				"valueChanged",

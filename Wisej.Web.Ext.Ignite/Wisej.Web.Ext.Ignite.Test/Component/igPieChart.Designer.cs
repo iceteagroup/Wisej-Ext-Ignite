@@ -104,7 +104,7 @@
 			this.igPieChart1.TabIndex = 0;
 			this.igPieChart1.Text = "igPieChart1";
 			widgetFunction1.Name = "AddItem";
-			widgetFunction1.Source = "this.widget.addItem({\r\n    Label: \"Test\",\r\n    Budget: 50\r\n});";
+			widgetFunction1.Source = "this.Instance.addItem({\r\n    Label: \"Test\",\r\n    Budget: 50\r\n});";
 			this.igPieChart1.WidgetFunctions = new Wisej.Web.Ext.Ignite.igBase.WidgetFunction[] {
         widgetFunction1};
 			// 

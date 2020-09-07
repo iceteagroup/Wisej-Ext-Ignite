@@ -36,7 +36,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
-			var data = await this.igCategoryChart1.Widget.getDataAsync();
+			var data = await this.igCategoryChart1.Instance.getDataAsync();
 
 			using (MemoryStream ms = new MemoryStream())
 			{

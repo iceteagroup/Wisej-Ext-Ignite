@@ -24,7 +24,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private async void buttonSave_Click(object sender, EventArgs e)
 		{
-			var data = await this.igSparkline1.Widget.getDataAsync();
+			var data = await this.igSparkline1.Instance.getDataAsync();
 
 			using (MemoryStream ms = new MemoryStream())
 			{
@@ -85,7 +85,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 				Freight = 61.0200
 			};
 
-			this.igSparkline1.Widget.addItem(data);
+			this.igSparkline1.Instance.addItem(data);
 		}
 		private int _id = 1;
 	}

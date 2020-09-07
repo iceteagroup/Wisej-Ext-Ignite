@@ -43,7 +43,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igHtmlEditor(object options) : base("igHtmlEditor", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"actionExecuted",
 				"actionExecuting",
 				"copy",
@@ -78,9 +78,9 @@ namespace Wisej.Web.Ext.Ignite
 		public void SetContent(string value, bool isHtml) 
 		{
 			if (isHtml)
-				this.Widget.setContent(value, "html");
+				this.Instance.setContent(value, "html");
 			else
-				this.Widget.setContent(value, "text");
+				this.Instance.setContent(value, "text");
 
 		}
 

@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igColorPicker(object options) : base("igColorPicker", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"colorSelected",
 			};
 		}
@@ -56,7 +56,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// </summary>
 		public void SelectColor(Color color)
 		{
-			this.Widget.selectColor(ColorTranslator.ToHtml(Color.FromArgb(color.ToArgb())));
+			this.Instance.selectColor(ColorTranslator.ToHtml(Color.FromArgb(color.ToArgb())));
 		}
 
 		#endregion

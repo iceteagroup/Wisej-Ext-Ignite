@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igDateEditor(object options) : base("igDateEditor", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"keydown",
 			"keypress",
 			"keyup",

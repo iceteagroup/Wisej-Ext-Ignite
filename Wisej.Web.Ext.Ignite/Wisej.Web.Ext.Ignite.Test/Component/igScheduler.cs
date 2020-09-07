@@ -10,10 +10,10 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igScheduler1.Widget.appointmentCreated += new WidgetEventHandler(igScheduler_WidgetEvent);
-			this.igScheduler1.Widget.appointmentDeleted += new WidgetEventHandler(igScheduler_WidgetEvent);
-			this.igScheduler1.Widget.appointmentCreating += new WidgetEventHandler(igScheduler_WidgetEvent);
-			this.igScheduler1.Widget.appointmentDeleting += new WidgetEventHandler(igScheduler_WidgetEvent);
+			this.igScheduler1.Instance.appointmentCreated += new WidgetEventHandler(igScheduler_WidgetEvent);
+			this.igScheduler1.Instance.appointmentDeleted += new WidgetEventHandler(igScheduler_WidgetEvent);
+			this.igScheduler1.Instance.appointmentCreating += new WidgetEventHandler(igScheduler_WidgetEvent);
+			this.igScheduler1.Instance.appointmentDeleting += new WidgetEventHandler(igScheduler_WidgetEvent);
 		}
 
 		private void igScheduler1_Appear(object sender, EventArgs e)

@@ -44,7 +44,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igQRCodeBarcode(object options) : base("igQRCodeBarcode", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"dataChanged",
 				"errorMessageDisplaying"
 			};

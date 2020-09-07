@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igFinancialChart(object options) : base("igFinancialChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"applyCustomIndicators",
 			"calloutStyleUpdating",
 			"dataBinding",

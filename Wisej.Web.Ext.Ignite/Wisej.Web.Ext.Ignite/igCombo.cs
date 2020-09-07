@@ -44,7 +44,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igCombo(object options) : base("igCombo", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"dataBinding",
 				"dataBound",
 				"dropDownClosed",
@@ -144,7 +144,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// </summary>
 		public void SetActiveIndex(int index)
 		{
-			this.Widget.activeIndex(index);
+			this.Instance.activeIndex(index);
 		}
 
 		/// <summary>
@@ -152,7 +152,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// </summary>
 		public void DeselectAll()
 		{
-			this.Widget.deselectAll();
+			this.Instance.deselectAll();
 		}
 
 		#endregion

@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igShapeChart(object options) : base("igShapeChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"calloutStyleUpdating",
 			"dataBinding",
 			"dataBound",

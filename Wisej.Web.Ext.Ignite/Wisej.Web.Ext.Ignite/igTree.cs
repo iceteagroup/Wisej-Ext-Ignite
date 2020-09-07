@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igTree(object options) : base("igTree", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"dataBinding",
 			"dataBound",
 			"drag",

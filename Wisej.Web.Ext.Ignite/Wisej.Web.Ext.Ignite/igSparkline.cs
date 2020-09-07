@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igSparkline(object options) : base("igSparkline", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"dataBinding",
 			"dataBound",
 			"hideTooltip",
@@ -61,7 +61,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="index">The index to insert at</param>
 		public void InsertItem(object item, int index)
 		{
-			this.Widget.insertItem(item, index);
+			this.Instance.insertItem(item, index);
 		}
 
 		#endregion

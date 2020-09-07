@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igShapeChart1.Widget.seriesPointerUp += new WidgetEventHandler(igShapeChart_WidgetEvent);
+			this.igShapeChart1.Instance.seriesPointerUp += new WidgetEventHandler(igShapeChart_WidgetEvent);
 		}
 
 		private void buttonUpdate_Click(object sender, EventArgs e)

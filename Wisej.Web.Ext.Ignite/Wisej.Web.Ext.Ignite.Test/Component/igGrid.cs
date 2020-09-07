@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igGrid1.Widget.cellClick += new WidgetEventHandler(igGrid_WidgetEvent);
-			this.igGrid1.Widget.cellRightClick += new WidgetEventHandler(igGrid_WidgetEvent);
+			this.igGrid1.Instance.cellClick += new WidgetEventHandler(igGrid_WidgetEvent);
+			this.igGrid1.Instance.cellRightClick += new WidgetEventHandler(igGrid_WidgetEvent);
 		}
 
 		private void igGrid_WidgetEvent(object sender, WidgetEventArgs e)
@@ -26,12 +26,12 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			var data = JSON.Parse(e.Files[0].InputStream);
 
-			this.igGrid1.Widget.dataSourceObject(data);
+			this.igGrid1.Instance.dataSourceObject(data);
 		}
 
 		private async void buttonExport_Click(object sender, EventArgs e)
 		{
-			var data = await this.igGrid1.Widget.getUnboundValuesAsync();
+			var data = await this.igGrid1.Instance.getUnboundValuesAsync();
 
 			using (MemoryStream ms = new MemoryStream())
 			{
@@ -63,7 +63,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private async void button1_Click(object sender, EventArgs e)
 		{
-			var result = await this.igGrid1.Widget.getCellValueAsync(1, "ProductName");
+			var result = await this.igGrid1.Instance.getCellValueAsync(1, "ProductName");
 
 			AlertBox.Show(result);
 		}

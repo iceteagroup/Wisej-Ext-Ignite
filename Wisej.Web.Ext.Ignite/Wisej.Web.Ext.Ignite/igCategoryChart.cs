@@ -45,7 +45,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igCategoryChart(object options) : base("igCategoryChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"calloutStyleUpdating",
 			"dataBinding",
 			"dataBound",

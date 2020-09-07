@@ -9,7 +9,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igDoughnutChart1.Widget.sliceClick += new WidgetEventHandler(igDoughnutChart_WidgetEvent);
+			this.igDoughnutChart1.Instance.sliceClick += new WidgetEventHandler(igDoughnutChart_WidgetEvent);
 		}
 
 		private void igDoughnutChart_WidgetEvent(object sender, WidgetEventArgs e)
@@ -30,7 +30,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private async void buttonExportData_Click(object sender, EventArgs e)
 		{
-			var data = await this.igDoughnutChart1.Widget.getDataAsync();
+			var data = await this.igDoughnutChart1.Instance.getDataAsync();
 
 			using (MemoryStream ms = new MemoryStream())
 			{

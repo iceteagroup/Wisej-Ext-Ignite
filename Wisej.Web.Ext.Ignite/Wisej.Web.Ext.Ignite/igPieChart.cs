@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igPieChart(object options) : base("igPieChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"browserNotSupported",
 			"labelClick",
 			"selectedItemChanged",

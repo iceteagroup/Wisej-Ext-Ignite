@@ -22,7 +22,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private async void button1_Click(object sender, EventArgs e)
 		{
-			var data = await this.igDateEditor1.Widget.getSelectedDateAsync();
+			var data = await this.igDateEditor1.Instance.getSelectedDateAsync();
 
 			AlertBox.Show(data.ToString());
 		}

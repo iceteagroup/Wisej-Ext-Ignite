@@ -44,7 +44,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igTimePicker(object options) : base("igTimePicker", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"blur",
 			"dropDownItemSelected",
 			"dropDownItemSelecting",

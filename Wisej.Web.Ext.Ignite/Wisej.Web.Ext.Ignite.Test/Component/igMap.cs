@@ -10,7 +10,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igMap1.Widget.seriesMouseLeftButtonUp += new WidgetEventHandler(igMap_WidgetEvent);
+			this.igMap1.Instance.seriesMouseLeftButtonUp += new WidgetEventHandler(igMap_WidgetEvent);
 		}
 
 		private void igMap_WidgetEvent(object sender, WidgetEventArgs e)
@@ -32,7 +32,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 				Country = textBox2.Text
 			};
 
-			this.igMap1.Widget.insertItem(item, 0, "worldCities");
+			this.igMap1.Instance.insertItem(item, 0, "worldCities");
 		}
 	}
 }

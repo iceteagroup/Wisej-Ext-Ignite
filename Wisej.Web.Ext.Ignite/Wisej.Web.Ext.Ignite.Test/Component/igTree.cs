@@ -8,8 +8,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igTree1.Widget.nodeClick += new WidgetEventHandler(igTree_WidgetEvent);
-			this.igTree1.Widget.nodeExpanded += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTree1.Instance.nodeClick += new WidgetEventHandler(igTree_WidgetEvent);
+			this.igTree1.Instance.nodeExpanded += new WidgetEventHandler(igTree_WidgetEvent);
 		}
 
 		private void igTree_WidgetEvent(object sender, WidgetEventArgs e)

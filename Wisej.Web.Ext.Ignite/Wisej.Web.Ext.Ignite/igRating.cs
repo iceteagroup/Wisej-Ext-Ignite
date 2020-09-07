@@ -43,7 +43,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igRating(object options) : base("igRating", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"hoverChange",
 				"valueChange"
 			};

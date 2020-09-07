@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igVideoPlayer1.Widget.paused += new WidgetEventHandler(igVideoPlayer_WidgetEvent);
-			this.igVideoPlayer1.Widget.playing += new WidgetEventHandler(igVideoPlayer_WidgetEvent);
+			this.igVideoPlayer1.Instance.paused += new WidgetEventHandler(igVideoPlayer_WidgetEvent);
+			this.igVideoPlayer1.Instance.playing += new WidgetEventHandler(igVideoPlayer_WidgetEvent);
 		}
 
 		private void button1_Click(object sender, EventArgs e)

@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igFunnelChart(object options) : base("igFunnelChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"dataBinding",
 				"dataBound",
 				"hideTooltip",

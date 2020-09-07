@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igSplitButton(object options) : base("igSplitButton", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"click",
 				"collapsed",
 				"collapsing",

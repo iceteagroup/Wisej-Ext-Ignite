@@ -42,7 +42,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igDataChart(object options) : base("igDataChart", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"assigningCategoryMarkerStyle",
 				"assigningCategoryStyle",
 				"axisRangeChanged",

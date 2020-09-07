@@ -49,7 +49,7 @@ namespace Wisej.Web.Ext.Ignite
 
 			}
 
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"bannerClick",
 			"bannerHidden",
 			"bannerVisible",
@@ -100,7 +100,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// </summary>
 		public void Play()
 		{
-			this.Widget.play();
+			this.Instance.play();
 		}
 
 		/// <summary>
@@ -108,7 +108,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// </summary>
 		public void Pause()
 		{
-			this.Widget.pause();
+			this.Instance.pause();
 		}
 
 		#endregion

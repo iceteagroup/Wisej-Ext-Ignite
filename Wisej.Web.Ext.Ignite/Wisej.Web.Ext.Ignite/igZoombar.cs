@@ -43,7 +43,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igZoombar(object options) : base("igZoombar", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"providerCreated",
 				"windowDragEnded",
 				"windowDragEnding",

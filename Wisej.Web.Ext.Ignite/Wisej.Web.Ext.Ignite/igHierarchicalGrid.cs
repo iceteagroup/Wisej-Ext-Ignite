@@ -39,7 +39,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igHierarchicalGrid(object options) : base("igHierarchicalGrid", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 				"cellClick",
 				"cellRightClick",
 				"childGridCreated",

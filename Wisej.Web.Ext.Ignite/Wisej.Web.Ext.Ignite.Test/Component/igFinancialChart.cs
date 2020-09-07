@@ -11,7 +11,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igFinancialChart1.Widget.seriesPointerUp += new WidgetEventHandler(igFinancialChart_WidgetEvent);
+			this.igFinancialChart1.Instance.seriesPointerUp += new WidgetEventHandler(igFinancialChart_WidgetEvent);
 		}
 
 		private void igFinancialChart_Load(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			this.igFinancialChart1.Widget.addItem(GenerateItem());
+			this.igFinancialChart1.Instance.addItem(GenerateItem());
 		}
 
 		private void button2_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 				for (var i = 0; i < 10; i++)
 				{
-					this.igFinancialChart1.Widget.addItem(GenerateItem());
+					this.igFinancialChart1.Instance.addItem(GenerateItem());
 					Application.Update(this);
 					Thread.Sleep(500);
 				}

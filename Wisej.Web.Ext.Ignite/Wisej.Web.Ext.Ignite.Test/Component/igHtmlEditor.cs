@@ -10,8 +10,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igHtmlEditor1.Widget.copy += new WidgetEventHandler(igHtmlEditor_WidgetEvent);
-			this.igHtmlEditor1.Widget.actionExecuted += new WidgetEventHandler(igHtmlEditor_WidgetEvent);
+			this.igHtmlEditor1.Instance.copy += new WidgetEventHandler(igHtmlEditor_WidgetEvent);
+			this.igHtmlEditor1.Instance.actionExecuted += new WidgetEventHandler(igHtmlEditor_WidgetEvent);
 		}
 
 		private void igHtmlEditor_Load(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private async void buttonExportData_Click(object sender, EventArgs e)
 		{
-			var html = await this.igHtmlEditor1.Widget.getContentAsync("html");
+			var html = await this.igHtmlEditor1.Instance.getContentAsync("html");
 
 			using (MemoryStream ms = new MemoryStream())
 			{

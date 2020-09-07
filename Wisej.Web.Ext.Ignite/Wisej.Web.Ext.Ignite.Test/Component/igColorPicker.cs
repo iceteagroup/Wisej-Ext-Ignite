@@ -8,7 +8,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igColorPicker1.Widget.colorSelected += new WidgetEventHandler(igColorPicker_WidgetEvent);
+			this.igColorPicker1.Instance.colorSelected += new WidgetEventHandler(igColorPicker_WidgetEvent);
 		}
 
 		private void igColorPicker_WidgetEvent(object sender, WidgetEventArgs e)

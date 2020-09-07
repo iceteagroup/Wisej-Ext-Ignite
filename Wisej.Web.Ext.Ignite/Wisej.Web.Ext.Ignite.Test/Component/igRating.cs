@@ -9,8 +9,8 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 		{
 			InitializeComponent();
 
-			this.igRating1.Widget.hoverChange += new WidgetEventHandler(igRating_WidgetEvent);
-			this.igRating1.Widget.valueChange += new WidgetEventHandler(igRating_WidgetEvent);
+			this.igRating1.Instance.hoverChange += new WidgetEventHandler(igRating_WidgetEvent);
+			this.igRating1.Instance.valueChange += new WidgetEventHandler(igRating_WidgetEvent);
 		}
 
 		private void igRating_WidgetEvent(object sender, WidgetEventArgs e)
@@ -24,7 +24,7 @@ namespace Wisej.Web.Ext.Ignite.Test.Component
 
 		private void buttonUpdate_Click(object sender, EventArgs e)
 		{
-			this.igRating1.Widget.value(this.numericUpDown1.Value);
+			this.igRating1.Instance.value(this.numericUpDown1.Value);
 
 			this.igRating1.Update();
 		}

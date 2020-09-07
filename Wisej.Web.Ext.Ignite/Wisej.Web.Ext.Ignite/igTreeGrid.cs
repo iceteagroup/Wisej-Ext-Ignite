@@ -43,7 +43,7 @@ namespace Wisej.Web.Ext.Ignite
 		/// <param name="options"></param>
 		public igTreeGrid(object options) : base("igTreeGrid", options)
 		{
-			this.WidgetWiredEvents = new[] {
+			this.WiredEvents = new[] {
 			"cellClick",
 			"cellRightClick",
 			"columnsCollectionModified",
