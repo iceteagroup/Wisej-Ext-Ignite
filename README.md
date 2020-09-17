@@ -18,7 +18,8 @@ All the premium extensions are open projects, meaning that we will keep adding, 
 To use this extension you need to acquire at least a **JavaScript Bundle** license from Infragistics: https://www.infragistics.com/products/ignite-ui.
 
 ## Demo
-http://demo.wisej.com/Ignite/
+Live demo of the Wisej.Web.Ext.Ignite.Test.sln project:
+http://demo.wisej.com/ignite
 
 ## Work in progress
 The library and test are in progress - we are adding every available widget to the test app and will keep refining the intergration for the foreseable future.
