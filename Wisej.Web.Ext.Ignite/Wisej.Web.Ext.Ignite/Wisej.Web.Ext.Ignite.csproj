@@ -228,7 +228,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Platform\wisej.web.ext.IgniteWidget.css" />
     <EmbeddedResource Include="igColorPicker.js">
       <DependentUpon>igColorPicker.cs</DependentUpon>
     </EmbeddedResource>
